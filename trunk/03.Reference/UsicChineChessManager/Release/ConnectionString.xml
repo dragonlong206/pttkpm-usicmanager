@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<connectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=XepHangCoTuong.accdb;Persist Security Info=False;</connectionString>
