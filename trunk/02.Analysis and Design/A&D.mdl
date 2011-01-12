@@ -78,7 +78,7 @@
 	exportControl 	"Public"
 	global     	TRUE
 	logical_models 	(list unit_reference_list
-	    (object Class "Ban chu nhiem"
+	    (object Class "Ban quan ly"
 		quid       	"4D2AAD940222"
 		stereotype 	"Actor")
 	    (object UseCase "Them hoi vien"
@@ -93,7 +93,7 @@
 		    (object Dependency_Relationship
 			quid       	"4D2AC1F50298"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Tra cuu cap bac hoi vien"
+			supplier   	"Use Case View::Tra cuu cap bac va ELO hoi vien"
 			quidu      	"4D2AC0E80065")))
 	    (object UseCase "Them tran dau"
 		quid       	"4D2AB1D102A3")
@@ -136,7 +136,7 @@
 		    (object Dependency_Relationship
 			quid       	"4D2AC07F0089"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Import danh sach hoi vien tham gia giai dau"
+			supplier   	"Use Case View::Nhap danh sach hoi vien tham gia giai dau"
 			quidu      	"4D2AC047020F")))
 	    (object UseCase "Xoa giai dau"
 		quid       	"4D2AC0190180")
@@ -146,11 +146,11 @@
 		    (object Dependency_Relationship
 			quid       	"4D2AC08A011A"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Import danh sach hoi vien tham gia giai dau"
+			supplier   	"Use Case View::Nhap danh sach hoi vien tham gia giai dau"
 			quidu      	"4D2AC047020F")))
-	    (object UseCase "Import danh sach hoi vien tham gia giai dau"
+	    (object UseCase "Nhap danh sach hoi vien tham gia giai dau"
 		quid       	"4D2AC047020F")
-	    (object UseCase "Tra cuu cap bac hoi vien"
+	    (object UseCase "Tra cuu cap bac va ELO hoi vien"
 		quid       	"4D2AC0E80065")
 	    (object UseCase "Tra cuu ELO"
 		quid       	"4D2AC25900A0")
@@ -168,7 +168,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$2"
 			quid       	"4D2AAE4F0217"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$3"
 		quid       	"4D2AAE55039C"
@@ -180,7 +180,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$5"
 			quid       	"4D2AAE5601FF"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$6"
 		quid       	"4D2AAE570141"
@@ -192,7 +192,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$8"
 			quid       	"4D2AAE570337"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$9"
 		quid       	"4D2AAE58018B"
@@ -204,7 +204,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$11"
 			quid       	"4D2AAE5803B6"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$12"
 		quid       	"4D2AB2260019"
@@ -216,7 +216,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$14"
 			quid       	"4D2AB226027D"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$15"
 		quid       	"4D2AB2270142"
@@ -228,7 +228,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$17"
 			quid       	"4D2AB2270358"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$18"
 		quid       	"4D2AB2280185"
@@ -240,7 +240,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$20"
 			quid       	"4D2AB2280333"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$21"
 		quid       	"4D2AB22901CD"
@@ -252,7 +252,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$23"
 			quid       	"4D2AB22903D9"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$24"
 		quid       	"4D2AB4A502F2"
@@ -264,7 +264,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$26"
 			quid       	"4D2AB4A60201"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$27"
 		quid       	"4D2AB4A8022F"
@@ -276,7 +276,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$29"
 			quid       	"4D2AB4A900A6"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$30"
 		quid       	"4D2AC03401FA"
@@ -288,7 +288,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$32"
 			quid       	"4D2AC0350045"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$33"
 		quid       	"4D2AC036033B"
@@ -300,7 +300,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$35"
 			quid       	"4D2AC03700E5"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$36"
 		quid       	"4D2AC0370341"
@@ -312,31 +312,31 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$38"
 			quid       	"4D2AC038028C"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$39"
 		quid       	"4D2AC073033B"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$40"
 			quid       	"4D2AC0740192"
-			supplier   	"Use Case View::Import danh sach hoi vien tham gia giai dau"
+			supplier   	"Use Case View::Nhap danh sach hoi vien tham gia giai dau"
 			quidu      	"4D2AC047020F"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$41"
 			quid       	"4D2AC0740194"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$42"
 		quid       	"4D2AC0F00378"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$43"
 			quid       	"4D2AC0F101B4"
-			supplier   	"Use Case View::Tra cuu cap bac hoi vien"
+			supplier   	"Use Case View::Tra cuu cap bac va ELO hoi vien"
 			quidu      	"4D2AC0E80065"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$44"
 			quid       	"4D2AC0F101B7"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$45"
 		quid       	"4D2AC26002A3"
@@ -348,7 +348,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$47"
 			quid       	"4D2AC261014C"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$48"
 		quid       	"4D2AC3FD0134"
@@ -360,7 +360,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$50"
 			quid       	"4D2AC3FE002B"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222")))
 	    (object Association "$UNNAMED$51"
 		quid       	"4D2AC45802FF"
@@ -372,7 +372,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$53"
 			quid       	"4D2AC4590251"
-			supplier   	"Use Case View::Ban chu nhiem"
+			supplier   	"Use Case View::Ban quan ly"
 			quidu      	"4D2AAD940222"))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
@@ -381,8 +381,8 @@
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
-		origin_x   	0
-		origin_y   	0
+		origin_x   	300
+		origin_y   	226
 		items      	(list diagram_item_list
 		    (object UseCaseView "Use Case View::Them hoi vien" @1
 			location   	(1184, 144)
@@ -600,8 +600,7 @@
 			fill_color 	13434879
 			quidu      	"4D2AB4560252"
 			height     	118)
-		    (object UseCaseView "Use Case View::Cap nhat diem rating dp" @10
-			location   	(384, 1312)
+		    (object DependencyView "" @10
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -611,295 +610,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object ItemLabel
+			stereotype 	(object SegLabel @11
 			    Parent_View 	@10
-			    location   	(384, 1450)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Cap nhat diem rating dp")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AB46402B3"
-			height     	118)
-		    (object UseCaseView "Use Case View::Them giai dau" @11
-			location   	(1024, 1664)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@11
-			    location   	(1024, 1802)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Them giai dau")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2ABFF802BD"
-			height     	118)
-		    (object UseCaseView "Use Case View::Xoa giai dau" @12
-			location   	(1424, 1584)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@12
-			    location   	(1424, 1722)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Xoa giai dau")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC0190180"
-			height     	118)
-		    (object UseCaseView "Use Case View::Cap nhat giai dau" @13
-			location   	(1712, 1520)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@13
-			    location   	(1712, 1658)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Cap nhat giai dau")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC02002CD"
-			height     	118)
-		    (object UseCaseView "Use Case View::Import danh sach hoi vien tham gia giai dau" @14
-			location   	(2128, 1504)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@14
-			    location   	(2128, 1642)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Import danh sach hoi vien tham gia giai dau")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC047020F"
-			height     	118)
-		    (object UseCaseView "Use Case View::Tra cuu cap bac hoi vien" @15
-			location   	(2640, 576)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@15
-			    location   	(2640, 714)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Tra cuu cap bac hoi vien")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC0E80065"
-			height     	118)
-		    (object DependencyView "" @16
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @17
-			    Parent_View 	@16
-			    location   	(1915, 1391)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.500000
-			    height     	120
-			    orientation 	0)
-			line_color 	3342489
-			quidu      	"4D2AC08A011A"
-			client     	@13
-			supplier   	@14
-			vertices   	(list Points
-			    (1820, 1513)
-			    (2016, 1506))
-			line_style 	0)
-		    (object DependencyView "" @18
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @19
-			    Parent_View 	@18
-			    location   	(1755, 1791)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.500000
-			    height     	120
-			    orientation 	0)
-			line_color 	3342489
-			quidu      	"4D2AC07F0089"
-			client     	@11
-			supplier   	@14
-			vertices   	(list Points
-			    (1155, 1720)
-			    (1465, 1859)
-			    (1872, 1934)
-			    (2222, 1775)
-			    (2191, 1693))
-			line_style 	0)
-		    (object DependencyView "" @20
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @21
-			    Parent_View 	@20
-			    location   	(2618, 396)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.500000
-			    height     	120
-			    orientation 	0)
-			line_color 	3342489
-			quidu      	"4D2AC1F50298"
-			client     	@4
-			supplier   	@15
-			vertices   	(list Points
-			    (2499, 449)
-			    (2575, 518))
-			line_style 	0)
-		    (object UseCaseView "Use Case View::Tra cuu ELO" @22
-			location   	(2688, 848)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@22
-			    location   	(2688, 986)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Tra cuu ELO")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC25900A0"
-			height     	118)
-		    (object DependencyView "" @23
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @24
-			    Parent_View 	@23
 			    location   	(536, 666)
 			    font       	(object Font
 				size       	10
@@ -927,7 +639,8 @@
 			    (395, 691)
 			    (503, 805))
 			line_style 	0)
-		    (object DependencyView "" @25
+		    (object UseCaseView "Use Case View::Cap nhat diem rating dp" @12
+			location   	(384, 1312)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -937,8 +650,31 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	(object SegLabel @26
-			    Parent_View 	@25
+			label      	(object ItemLabel
+			    Parent_View 	@12
+			    location   	(384, 1450)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Cap nhat diem rating dp")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AB46402B3"
+			height     	118)
+		    (object DependencyView "" @13
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @14
+			    Parent_View 	@13
 			    location   	(219, 997)
 			    font       	(object Font
 				size       	10
@@ -961,15 +697,279 @@
 			line_color 	3342489
 			quidu      	"4D2AC2DF01D3"
 			client     	@7
-			supplier   	@10
+			supplier   	@12
 			vertices   	(list Points
 			    (150, 691)
 			    (78, 831)
 			    (119, 1163)
 			    (280, 1253))
 			line_style 	0)
-		    (object UseCaseView "Use Case View::Tang giam ELO dac biet" @27
-			location   	(2496, 1456)
+		    (object UseCaseView "Use Case View::Them giai dau" @15
+			location   	(1024, 1664)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@15
+			    location   	(1024, 1802)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Them giai dau")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2ABFF802BD"
+			height     	118)
+		    (object UseCaseView "Use Case View::Xoa giai dau" @16
+			location   	(1424, 1584)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@16
+			    location   	(1424, 1722)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Xoa giai dau")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AC0190180"
+			height     	118)
+		    (object UseCaseView "Use Case View::Cap nhat giai dau" @17
+			location   	(1712, 1520)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@17
+			    location   	(1712, 1658)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Cap nhat giai dau")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AC02002CD"
+			height     	118)
+		    (object UseCaseView "Use Case View::Nhap danh sach hoi vien tham gia giai dau" @18
+			location   	(2128, 1504)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@18
+			    location   	(2128, 1642)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Nhap danh sach hoi vien tham gia giai dau")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AC047020F"
+			height     	118)
+		    (object DependencyView "" @19
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @20
+			    Parent_View 	@19
+			    location   	(1915, 1391)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<extend>>"
+			    pctDist    	0.500000
+			    height     	120
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"4D2AC08A011A"
+			client     	@17
+			supplier   	@18
+			vertices   	(list Points
+			    (1820, 1513)
+			    (2016, 1506))
+			line_style 	0)
+		    (object DependencyView "" @21
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @22
+			    Parent_View 	@21
+			    location   	(1755, 1791)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<extend>>"
+			    pctDist    	0.500000
+			    height     	120
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"4D2AC07F0089"
+			client     	@15
+			supplier   	@18
+			vertices   	(list Points
+			    (1155, 1720)
+			    (1465, 1859)
+			    (1872, 1934)
+			    (2222, 1775)
+			    (2191, 1693))
+			line_style 	0)
+		    (object UseCaseView "Use Case View::Tra cuu cap bac va ELO hoi vien" @23
+			location   	(2672, 784)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@23
+			    location   	(2672, 922)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Tra cuu cap bac va ELO hoi vien")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AC0E80065"
+			height     	118)
+		    (object DependencyView "" @24
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @25
+			    Parent_View 	@24
+			    location   	(2645, 537)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<extend>>"
+			    pctDist    	0.500000
+			    height     	120
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"4D2AC1F50298"
+			client     	@4
+			supplier   	@23
+			vertices   	(list Points
+			    (2463, 483)
+			    (2630, 725))
+			line_style 	0)
+		    (object UseCaseView "Use Case View::Tang giam ELO dac biet" @26
+			location   	(2592, 1456)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@26
+			    location   	(2592, 1594)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Tang giam ELO dac biet")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4D2AC3EB0102"
+			height     	118)
+		    (object UseCaseView "Use Case View::Reset diem lien kich" @27
+			location   	(2512, 1104)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -981,22 +981,22 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@27
-			    location   	(2496, 1594)
+			    location   	(2512, 1242)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Tang giam ELO dac biet")
+			    label      	"Reset diem lien kich")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"4D2AC3EB0102"
+			quidu      	"4D2AC44F028A"
 			height     	118)
-		    (object ClassView "Class" "Use Case View::Ban chu nhiem" @28
+		    (object ClassView "Class" "Use Case View::Ban quan ly" @28
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(1232, 560)
+			location   	(1232, 768)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1008,12 +1008,12 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@28
-			    location   	(1232, 720)
+			    location   	(1232, 928)
 			    anchor_loc 	1
-			    nlines     	1
+			    nlines     	2
 			    max_width  	325
 			    justify    	0
-			    label      	"Ban chu nhiem")
+			    label      	"Ban quan ly")
 			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -1021,7 +1021,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$0" @29
-			location   	(1209, 393)
+			location   	(1208, 497)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1037,30 +1037,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$1" @30
 				Parent_View 	@29
-				location   	(633, -23)
+				location   	(632, 81)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE4F0214"
 				client     	@29
 				supplier   	@1
 				vertices   	(list Points
-				    (1209, 393)
-				    (1200, 307))
+				    (1208, 497)
+				    (1193, 307))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$2" @31
 				Parent_View 	@29
-				location   	(633, -23)
+				location   	(632, 81)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE4F0217"
 				client     	@29
 				supplier   	@28
 				vertices   	(list Points
-				    (1209, 393)
-				    (1219, 480))
+				    (1208, 497)
+				    (1224, 687))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$3" @32
-			location   	(1403, 392)
+			location   	(1401, 512)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1076,30 +1076,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$4" @33
 				Parent_View 	@32
-				location   	(827, -24)
+				location   	(825, 96)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE5601FD"
 				client     	@32
 				supplier   	@2
 				vertices   	(list Points
-				    (1403, 392)
-				    (1517, 282))
+				    (1401, 512)
+				    (1520, 339))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$5" @34
 				Parent_View 	@32
-				location   	(827, -24)
+				location   	(825, 96)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE5601FF"
 				client     	@32
 				supplier   	@28
 				vertices   	(list Points
-				    (1403, 392)
-				    (1289, 502))
+				    (1401, 512)
+				    (1283, 686))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$6" @35
-			location   	(1556, 424)
+			location   	(1556, 545)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1115,30 +1115,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$7" @36
 				Parent_View 	@35
-				location   	(980, 8)
+				location   	(980, 129)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE570334"
 				client     	@35
 				supplier   	@3
 				vertices   	(list Points
-				    (1556, 424)
-				    (1824, 317))
+				    (1556, 545)
+				    (1824, 364))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$8" @37
 				Parent_View 	@35
-				location   	(980, 8)
+				location   	(980, 129)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE570337"
 				client     	@35
 				supplier   	@28
 				vertices   	(list Points
-				    (1556, 424)
-				    (1289, 532))
+				    (1556, 545)
+				    (1289, 726))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$9" @38
-			location   	(1765, 442)
+			location   	(1765, 551)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1154,30 +1154,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$10" @39
 				Parent_View 	@38
-				location   	(1189, 26)
+				location   	(1189, 135)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE5803B3"
 				client     	@38
 				supplier   	@4
 				vertices   	(list Points
-				    (1765, 442)
-				    (2242, 339))
+				    (1765, 551)
+				    (2242, 360))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$11" @40
 				Parent_View 	@38
-				location   	(1189, 26)
+				location   	(1189, 135)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AAE5803B6"
 				client     	@38
 				supplier   	@28
 				vertices   	(list Points
-				    (1765, 442)
-				    (1289, 545))
+				    (1765, 551)
+				    (1289, 742))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$12" @41
-			location   	(1037, 371)
+			location   	(1028, 481)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1193,30 +1193,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$13" @42
 				Parent_View 	@41
-				location   	(-339, -509)
+				location   	(-348, -399)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB226027B"
 				client     	@41
 				supplier   	@5
 				vertices   	(list Points
-				    (1037, 371)
-				    (904, 242))
+				    (1028, 481)
+				    (883, 275))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$14" @43
 				Parent_View 	@41
-				location   	(-339, -509)
+				location   	(-348, -399)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB226027D"
 				client     	@41
 				supplier   	@28
 				vertices   	(list Points
-				    (1037, 371)
-				    (1171, 500))
+				    (1028, 481)
+				    (1174, 687))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$15" @44
-			location   	(808, 436)
+			location   	(812, 548)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1232,30 +1232,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$16" @45
 				Parent_View 	@44
-				location   	(-568, -444)
+				location   	(-564, -332)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB2270355"
 				client     	@44
 				supplier   	@6
 				vertices   	(list Points
-				    (808, 436)
-				    (444, 332))
+				    (812, 548)
+				    (453, 362))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$17" @46
 				Parent_View 	@44
-				location   	(-568, -444)
+				location   	(-564, -332)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB2270358"
 				client     	@44
 				supplier   	@28
 				vertices   	(list Points
-				    (808, 436)
-				    (1172, 541))
+				    (812, 548)
+				    (1172, 735))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$18" @47
-			location   	(760, 542)
+			location   	(760, 650)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1271,30 +1271,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$19" @48
 				Parent_View 	@47
-				location   	(-616, -338)
+				location   	(-616, -230)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB2280330"
 				client     	@47
 				supplier   	@7
 				vertices   	(list Points
-				    (760, 542)
-				    (348, 529))
+				    (760, 650)
+				    (348, 551))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$20" @49
 				Parent_View 	@47
-				location   	(-616, -338)
+				location   	(-616, -230)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB2280333"
 				client     	@47
 				supplier   	@28
 				vertices   	(list Points
-				    (760, 542)
-				    (1173, 555))
+				    (760, 650)
+				    (1173, 750))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$21" @50
-			location   	(878, 1111)
+			location   	(883, 1193)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1310,30 +1310,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$22" @51
 				Parent_View 	@50
-				location   	(-498, 231)
+				location   	(-493, 313)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB22903D7"
 				client     	@50
 				supplier   	@8
 				vertices   	(list Points
-				    (878, 1111)
-				    (641, 1478))
+				    (883, 1193)
+				    (649, 1478))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @52
 				Parent_View 	@50
-				location   	(-498, 231)
+				location   	(-493, 313)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB22903D9"
 				client     	@50
 				supplier   	@28
 				vertices   	(list Points
-				    (878, 1111)
-				    (1115, 745))
+				    (883, 1193)
+				    (1118, 908))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$24" @53
-			location   	(920, 698)
+			location   	(920, 810)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1349,30 +1349,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$25" @54
 				Parent_View 	@53
-				location   	(-456, -182)
+				location   	(-456, -70)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB4A601FE"
 				client     	@53
 				supplier   	@9
 				vertices   	(list Points
-				    (920, 698)
-				    (668, 813))
+				    (920, 810)
+				    (668, 846))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$26" @55
 				Parent_View 	@53
-				location   	(-456, -182)
+				location   	(-456, -70)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB4A60201"
 				client     	@53
 				supplier   	@28
 				vertices   	(list Points
-				    (920, 698)
-				    (1172, 583))
+				    (920, 810)
+				    (1172, 774))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$27" @56
-			location   	(768, 968)
+			location   	(819, 1028)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1388,30 +1388,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$28" @57
 				Parent_View 	@56
-				location   	(-608, 88)
+				location   	(-557, 148)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB4A900A3"
 				client     	@56
-				supplier   	@10
+				supplier   	@12
 				vertices   	(list Points
-				    (768, 968)
-				    (446, 1252))
+				    (819, 1028)
+				    (467, 1254))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$29" @58
 				Parent_View 	@56
-				location   	(-608, 88)
+				location   	(-557, 148)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AB4A900A6"
 				client     	@56
 				supplier   	@28
 				vertices   	(list Points
-				    (768, 968)
-				    (1090, 685))
+				    (819, 1028)
+				    (1172, 802))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$30" @59
-			location   	(1113, 1175)
+			location   	(1111, 1279)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1427,30 +1427,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$31" @60
 				Parent_View 	@59
-				location   	(-119, 615)
+				location   	(-121, 719)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0350042"
 				client     	@59
-				supplier   	@11
+				supplier   	@15
 				vertices   	(list Points
-				    (1113, 1175)
-				    (1032, 1605))
+				    (1111, 1279)
+				    (1035, 1606))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$32" @61
 				Parent_View 	@59
-				location   	(-119, 615)
+				location   	(-121, 719)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0350045"
 				client     	@59
 				supplier   	@28
 				vertices   	(list Points
-				    (1113, 1175)
-				    (1195, 745))
+				    (1111, 1279)
+				    (1188, 953))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$33" @62
-			location   	(1338, 1135)
+			location   	(1341, 1239)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1466,30 +1466,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$34" @63
 				Parent_View 	@62
-				location   	(106, 575)
+				location   	(109, 679)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC03700E3"
 				client     	@62
-				supplier   	@12
+				supplier   	@16
 				vertices   	(list Points
-				    (1338, 1135)
-				    (1411, 1526))
+				    (1341, 1239)
+				    (1408, 1526))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$35" @64
 				Parent_View 	@62
-				location   	(106, 575)
+				location   	(109, 679)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC03700E5"
 				client     	@62
 				supplier   	@28
 				vertices   	(list Points
-				    (1338, 1135)
-				    (1265, 745))
+				    (1341, 1239)
+				    (1274, 953))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$36" @65
-			location   	(1501, 1103)
+			location   	(1508, 1203)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1505,30 +1505,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$37" @66
 				Parent_View 	@65
-				location   	(269, 543)
+				location   	(276, 643)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC038028A"
 				client     	@65
-				supplier   	@13
+				supplier   	@17
 				vertices   	(list Points
-				    (1501, 1103)
-				    (1680, 1462))
+				    (1508, 1203)
+				    (1671, 1460))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$38" @67
 				Parent_View 	@65
-				location   	(269, 543)
+				location   	(276, 643)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC038028C"
 				client     	@65
 				supplier   	@28
 				vertices   	(list Points
-				    (1501, 1103)
-				    (1322, 745))
+				    (1508, 1203)
+				    (1345, 946))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$39" @68
-			location   	(1723, 1078)
+			location   	(1701, 1152)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1544,30 +1544,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$40" @69
 				Parent_View 	@68
-				location   	(491, 518)
+				location   	(469, 592)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0740192"
 				client     	@68
-				supplier   	@14
+				supplier   	@18
 				vertices   	(list Points
-				    (1723, 1078)
-				    (2073, 1446))
+				    (1701, 1152)
+				    (2057, 1445))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$41" @70
 				Parent_View 	@68
-				location   	(491, 518)
+				location   	(469, 592)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0740194"
 				client     	@68
 				supplier   	@28
 				vertices   	(list Points
-				    (1723, 1078)
-				    (1373, 711))
+				    (1701, 1152)
+				    (1345, 860))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$42" @71
-			location   	(1909, 566)
+			location   	(1925, 774)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1583,69 +1583,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$43" @72
 				Parent_View 	@71
-				location   	(677, 6)
+				location   	(693, 214)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0F101B4"
 				client     	@71
-				supplier   	@15
+				supplier   	@23
 				vertices   	(list Points
-				    (1909, 566)
-				    (2530, 572))
+				    (1925, 774)
+				    (2561, 780))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$44" @73
 				Parent_View 	@71
-				location   	(677, 6)
+				location   	(693, 214)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC0F101B7"
 				client     	@71
 				supplier   	@28
 				vertices   	(list Points
-				    (1909, 566)
-				    (1289, 560))
+				    (1925, 774)
+				    (1289, 768))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$45" @74
-			location   	(1932, 695)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"4D2AC26002A3"
-			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$46" @75
-				Parent_View 	@74
-				location   	(700, 135)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4D2AC2610149"
-				client     	@74
-				supplier   	@22
-				vertices   	(list Points
-				    (1932, 695)
-				    (2576, 821))
-				line_style 	0)
-			    (object RoleView "$UNNAMED$47" @76
-				Parent_View 	@74
-				location   	(700, 135)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"4D2AC261014C"
-				client     	@74
-				supplier   	@28
-				vertices   	(list Points
-				    (1932, 695)
-				    (1289, 569))
-				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$48" @77
-			location   	(1893, 1028)
+		    (object AssociationViewNew "$UNNAMED$48" @74
+			location   	(1885, 1097)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1659,56 +1620,32 @@
 			line_color 	3342489
 			quidu      	"4D2AC3FD0134"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$49" @78
-				Parent_View 	@77
-				location   	(661, 468)
+			    (object RoleView "$UNNAMED$49" @75
+				Parent_View 	@74
+				location   	(653, 537)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC3FE0028"
-				client     	@77
-				supplier   	@27
+				client     	@74
+				supplier   	@26
 				vertices   	(list Points
-				    (1893, 1028)
-				    (2414, 1398))
+				    (1885, 1097)
+				    (2482, 1398))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$50" @79
-				Parent_View 	@77
-				location   	(661, 468)
+			    (object RoleView "$UNNAMED$50" @76
+				Parent_View 	@74
+				location   	(653, 537)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC3FE002B"
-				client     	@77
+				client     	@74
 				supplier   	@28
 				vertices   	(list Points
-				    (1893, 1028)
-				    (1373, 659))
+				    (1885, 1097)
+				    (1289, 796))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Reset diem lien kich" @80
-			location   	(2512, 1104)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@80
-			    location   	(2512, 1242)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Reset diem lien kich")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"4D2AC44F028A"
-			height     	118)
-		    (object AssociationViewNew "$UNNAMED$51" @81
-			location   	(1845, 819)
+		    (object AssociationViewNew "$UNNAMED$51" @77
+			location   	(1845, 926)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1722,29 +1659,29 @@
 			line_color 	3342489
 			quidu      	"4D2AC45802FF"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$52" @82
-				Parent_View 	@81
-				location   	(613, 259)
+			    (object RoleView "$UNNAMED$52" @78
+				Parent_View 	@77
+				location   	(613, 366)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC459024E"
-				client     	@81
-				supplier   	@80
+				client     	@77
+				supplier   	@27
 				vertices   	(list Points
-				    (1845, 819)
-				    (2402, 1056))
+				    (1845, 926)
+				    (2402, 1073))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$53" @83
-				Parent_View 	@81
-				location   	(613, 259)
+			    (object RoleView "$UNNAMED$53" @79
+				Parent_View 	@77
+				location   	(613, 366)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"4D2AC4590251"
-				client     	@81
+				client     	@77
 				supplier   	@28
 				vertices   	(list Points
-				    (1845, 819)
-				    (1289, 583))
+				    (1845, 926)
+				    (1289, 780))
 				line_style 	0)))))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"39C9260C00D5"
@@ -1778,7 +1715,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @84
+		    (object CategoryView "Logical View::java" @80
 			location   	(208, 272)
 			font       	(object Font
 			    size       	10
@@ -1790,7 +1727,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@84
+			    Parent_View 	@80
 			    location   	(64, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1802,7 +1739,7 @@
 			quidu      	"39C92661003B"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::javax" @85
+		    (object CategoryView "Logical View::javax" @81
 			location   	(656, 272)
 			font       	(object Font
 			    size       	10
@@ -1814,7 +1751,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@85
+			    Parent_View 	@81
 			    location   	(512, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1826,7 +1763,7 @@
 			quidu      	"39C926610018"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::org" @86
+		    (object CategoryView "Logical View::org" @82
 			location   	(1104, 272)
 			font       	(object Font
 			    size       	10
@@ -1838,7 +1775,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@86
+			    Parent_View 	@82
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1859,7 +1796,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @87
+		    (object NoteView @83
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -1874,7 +1811,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @88
+		    (object NoteView @84
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -1889,7 +1826,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @89
+		    (object NoteView @85
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -1904,7 +1841,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @90
+		    (object NoteView @86
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -1919,7 +1856,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @91
+		    (object Label @87
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -1934,7 +1871,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @92
+		    (object Label @88
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -1949,7 +1886,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @93
+		    (object Label @89
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -1964,7 +1901,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @94
+		    (object Label @90
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -1979,7 +1916,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @95
+		    (object Label @91
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
@@ -2985,7 +2922,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files\\Java\\jdk1.6.0_21\\jre\\lib\\rt.jar;C:\\Program Files\\Java\\jdk1.6.0_21\\lib\\dt.jar;C:\\Program Files\\Java\\jdk1.6.0_21\\lib\\tools.jar")
+			value      	";C:\\Program Files\\Java\\jdk1.6.0_20\\jre\\lib\\rt.jar;C:\\Program Files\\Java\\jdk1.6.0_20\\lib\\dt.jar;C:\\Program Files\\Java\\jdk1.6.0_20\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
@@ -5851,6 +5788,2244 @@
 		value      	FALSE)
 	    (object Attribute
 		tool       	"Version Control"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"propertyId"
+		value      	"838326200")
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileExtension"
+			value      	"1.ada")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileBackupExtension"
+			value      	"1.ad~")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SpecFileTemporaryExtension"
+			value      	"1.ad#")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileExtension"
+			value      	"2.ada")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileBackupExtension"
+			value      	"2.ad~")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"BodyFileTemporaryExtension"
+			value      	"2.ad#")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateBodies"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultCodeBody"
+			value      	"[statement]")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CommentWidth"
+			value      	60)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"UseFileName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Directory"
+			value      	"$ROSEADA83_SOURCE")))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassName"
+			value      	"Object")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassAccess"
+			value      	("ImplementationSet" 43))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplementationType"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsSubtype"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"PolymorphicUnit"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleName"
+			value      	"Handle")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleAccess"
+			value      	("ImplementationSet" 45))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Discriminant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"EnumerationLiteralPrefix"
+			value      	"A_")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"RecordFieldPrefix"
+			value      	"The_")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassParameterName"
+			value      	"This")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultConstructorKind"
+			value      	("ConstructorKindSet" 199))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DefaultConstructorName"
+			value      	"Create")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDefaultConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyConstructorKind"
+			value      	("ConstructorKindSet" 199))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyConstructorName"
+			value      	"Copy")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineCopyConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DestructorName"
+			value      	"Free")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDestructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassEqualityOperation"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"HandleEqualityOperation"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineEquality"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsTask"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"LimitedPrivate"
+				value      	200)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ConstructorKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenericFormalParameters"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalUses"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AdditionalUses"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsSubunit"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SubprogramImplementation"
+			value      	("SubprogramImplementationSet" 2))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Renames"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ClassParameterMode"
+			value      	("ParameterModeSet" 203))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ExitCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialCodeBody"
+			value      	"${default}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SubprogramImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Spec"
+				value      	224)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Body"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Renaming"
+				value      	222)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Separate"
+				value      	223)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"FunctionReturn"
+				value      	206)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Mode"
+			value      	("ParameterModeSet" 232))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenericFormal"
+			value      	("GenericFormalSet" 1))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AssociationMapping"
+			value      	("AssociationMappingSet" 1))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"InOut"
+				value      	203)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenericFormalSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Default"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Object"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Type"
+				value      	3)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	4)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Function"
+				value      	5)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AssociationMappingSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Name"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Type"
+				value      	2)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${supplier}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${relationship}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${attribute}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Variant"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${association}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${association}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateAssociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"AssociateName"
+			value      	"Associate")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineAssociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GenerateDissociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DissociateName"
+			value      	"Dissociate")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineDissociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DataMemberName"
+			value      	"${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"GetName"
+			value      	"Get_${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SetName"
+			value      	"Set_${target}")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada83"
+				name       	"After"
+				value      	234)))))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada83"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"Ada83"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"propertyId"
+		value      	"838326200")
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileExtension"
+			value      	"1.ada")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileBackupExtension"
+			value      	"1.ad~")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SpecFileTemporaryExtension"
+			value      	"1.ad#")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileExtension"
+			value      	"2.ada")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileBackupExtension"
+			value      	"2.ad~")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"BodyFileTemporaryExtension"
+			value      	"2.ad#")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"UseColonNotation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateBodies"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DefaultCodeBody"
+			value      	"[statement]")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CommentWidth"
+			value      	60)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"UseFileName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FileNameFormat"
+			value      	"128vx_b")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Directory"
+			value      	"$ROSEADA95_SOURCE")))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeName"
+			value      	"Object")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeVisibility"
+			value      	("TypeVisibilitySet" 43))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeImplementation"
+			value      	("TypeImplementationSet" 208))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IncompleteType"
+			value      	("IncompleteTypeSet" 1))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IndefiniteType"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControl"
+			value      	("TypeControlSet" 225))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlName"
+			value      	"Controlled_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlVisibility"
+			value      	("TypeVisibilitySet" 43))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeDefinition"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordImplementation"
+			value      	("RecordImplementationSet" 209))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordKindPackageName"
+			value      	"${class}_Record_Kinds")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsLimited"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsSubtype"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessType"
+			value      	("GenerateAccessTypeSet" 230))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeName"
+			value      	"Handle")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeVisibility"
+			value      	("TypeVisibilitySet" 45))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessTypeDefinition"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessClassWide"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"MaybeAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterizedImplementation"
+			value      	("ParameterizedImplementationSet" 11))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParentClassName"
+			value      	"Superclass")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EnumerationLiteralPrefix"
+			value      	"A_")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldPrefix"
+			value      	"The_")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayOfTypeName"
+			value      	"Array_Of_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessArrayOfTypeName"
+			value      	"Access_Array_Of_${type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayOfAccessTypeName"
+			value      	"Array_Of_${access_type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessArrayOfAccessTypeName"
+			value      	"Access_Array_Of_${access_type}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ArrayIndexDefinition"
+			value      	"Positive range <>")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessorOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateStandardOperations"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameter"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterName"
+			value      	"This")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDefaultConstructor"
+			value      	("SubprogramKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DefaultConstructorName"
+			value      	"Create")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDefaultConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateCopyConstructor"
+			value      	("SubprogramKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyConstructorName"
+			value      	"Copy")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineCopyConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDestructor"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DestructorName"
+			value      	"Free")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDestructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateTypeEquality"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeEqualityName"
+			value      	(value Text 
+|"="
+			))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineEquality"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Tagged"
+				value      	208)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Record"
+				value      	210)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Mixin"
+				value      	211)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Task"
+				value      	212)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IncompleteTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotDeclare"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"NoDiscriminantPart"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"UnknownDiscriminantPart"
+				value      	3)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"KnownDiscriminantPart"
+				value      	4)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"SingleType"
+				value      	209)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"MultipleTypes"
+				value      	213)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterizedImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Unconstrained"
+				value      	214)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Private"
+				value      	43)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"TypeControlSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"None"
+				value      	225)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InitializationOnly"
+				value      	226)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AssignmentFinalizationOnly"
+				value      	227)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"All"
+				value      	228)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Always"
+				value      	229)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Auto"
+				value      	230)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenericFormalParameters"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalUses"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsPrivate"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FileName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ReturnType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalWiths"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AdditionalUses"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsSubunit"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramImplementation"
+			value      	("SubprogramImplementationSet" 2))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Renames"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateOverriding"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterMode"
+			value      	("ParameterModeSet" 203))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ImplicitParameterClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ExitCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialCodeBody"
+			value      	"${default}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"EntryBarrierCondition"
+			value      	"True")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SubprogramImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Spec"
+				value      	224)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Body"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Abstract"
+				value      	221)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Renaming"
+				value      	222)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"RenamingAsBody"
+				value      	231)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Separate"
+				value      	223)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Access"
+				value      	220)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Mode"
+			value      	("ParameterModeSet" 232))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenericFormal"
+			value      	("GenericFormalSet" 1))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AssociationMapping"
+			value      	("AssociationMappingSet" 1))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ParameterModeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Default"
+				value      	232)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"In"
+				value      	204)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Out"
+				value      	205)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"InOut"
+				value      	203)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Access"
+				value      	220)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenericFormalSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Default"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Object"
+				value      	2)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Type"
+				value      	3)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	4)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	5)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Package"
+				value      	6)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AssociationMappingSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Name"
+				value      	1)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Type"
+				value      	2)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${supplier}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${relationship}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementation"
+			value      	("ContainerImplementationSet" 217))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Array"
+				value      	217)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${attribute}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${association}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${association}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAssociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AssociateName"
+			value      	"Associate")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineAssociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateDissociate"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DissociateName"
+			value      	"Dissociate")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineDissociate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"NameIfUnlabeled"
+			value      	"The_${targetClass}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementation"
+			value      	("RecordFieldImplementationSet" 216))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"AccessDiscriminantClassWide"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldName"
+			value      	"${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateGet"
+			value      	("FunctionKindSet" 199))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessGet"
+			value      	("FunctionKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GetName"
+			value      	"Get_${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateSet"
+			value      	("ProcedureKindSet" 202))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"GenerateAccessSet"
+			value      	("ProcedureKindSet" 201))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SetName"
+			value      	"Set_${target}")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsAliased"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"IsConstant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Declare"
+			value      	("DeclareSet" 234))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Representation"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementation"
+			value      	("ContainerImplementationSet" 217))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerGeneric"
+			value      	"List")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerDeclarations"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ProcedureKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Procedure"
+				value      	202)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"DeclareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Before"
+				value      	233)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"After"
+				value      	234)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"RecordFieldImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Component"
+				value      	216)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Discriminant"
+				value      	218)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"AccessDiscriminant"
+				value      	219)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"ContainerImplementationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Array"
+				value      	217)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Generic"
+				value      	11)))
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"FunctionKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"Function"
+				value      	199)
+			    (object Attribute
+				tool       	"Ada95"
+				name       	"DoNotCreate"
+				value      	201)))))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Ada95"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"Ada95"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"propertyId"
+		value      	"783606378")
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateModel"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"InstancingSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Private"
+				value      	221)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"PublicNotCreatable"
+				value      	213)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"SingleUse"
+				value      	214)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalSingleUse"
+				value      	215)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"MultiUse"
+				value      	219)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"GlobalMultiUse"
+				value      	220)))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"BaseSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"(none)"
+				value      	222)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"0"
+				value      	223)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"1"
+				value      	224)))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionBase"
+			value      	("BaseSet" 222))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionExplicit"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"OptionCompare"
+			value      	("CompareSet" 202))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Instancing"
+			value      	("InstancingSet" 219))
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"CompareSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"(none)"
+				value      	202)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Binary"
+				value      	203)
+			    (object Attribute
+				tool       	"Visual Basic"
+				name       	"Text"
+				value      	204)))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"LibraryName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"AliasName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"IsStatic"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ReplaceExistingBody"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"DefaultBody"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"PropertyName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"New"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"WithEvents"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"FullName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProcedureID"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"PropertyName"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Subscript"
+			value      	"")))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Inherit"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImplementsDelegation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"FullName"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ByVal"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ByRef"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"Optional"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ParamArray"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ProjectFile"
+			value      	"")
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"UpdateModel"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImportReferences"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"QuickImport"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Visual Basic"
+			name       	"ImportBinary"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Visual Basic"
 		name       	"HiddenTool"
 		value      	FALSE))
 	quid       	"39C9260C00D9"))
