@@ -72,5 +72,17 @@ namespace TestDAO
             HoiVienDAO hoiVienDAO = new HoiVienDAO();
             Assert.IsTrue(hoiVienDAO.ThemMoiHoiVien(hoiVienDTO));
         }
+
+        [TestMethod]
+        public void TestCapNhatHoiVien1()
+        {
+            HoiVienDTO hoiVienDTO = new HoiVienDTO();
+            hoiVienDTO.ID = 3;
+            hoiVienDTO.HoTen = "Nguyễn Bảo Long";
+            hoiVienDTO.GioiTinh = 1;
+
+            HoiVienDAO hoiVienDAO = new HoiVienDAO();
+            Assert.IsTrue(hoiVienDAO.CapNhatHoiVien(hoiVienDTO));
+        }
     }
 }
