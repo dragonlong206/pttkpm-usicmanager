@@ -55,7 +55,7 @@ namespace DTO
             id = 0;
             tenGiaiDau = string.Empty;
             donViToChuc = string.Empty;
-            thoiGian = new DateTime();
+            thoiGian = DateTime.Now;
             diaDiem = string.Empty;
             maCapToChuc = 0;
         }

@@ -15,7 +15,7 @@ namespace DAO
         {
             get
             {
-                return ReadConnectionString("ConnectionString.xml");
+                return ReadConnectionString("..\\..\\ConnectionString.xml");
             }
         }
         public static String ReadConnectionString(String file)
@@ -84,7 +84,7 @@ namespace DAO
         #region ExecuteNoneQuery
         public static int ExecuteNoneQuery(String query, List<OleDbParameter> sqlParams)
         {
-            int n;
+            int n = 0;
             try
             {
                 OleDbConnection connect = new OleDbConnection(ConnectionString);

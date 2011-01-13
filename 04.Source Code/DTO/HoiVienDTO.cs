@@ -71,9 +71,9 @@ namespace DTO
             mssv = string.Empty;
             gioiTinh = 0;
             elo = 0;
-            maCapBac = 0;
+            maCapBac = 1;
             diemLienKich = 0;
-            thoiGianDatDiemLienKich = new DateTime();
+            thoiGianDatDiemLienKich = DateTime.Now;
         }
     }
 }
