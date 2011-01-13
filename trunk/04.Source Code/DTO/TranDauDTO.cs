@@ -76,7 +76,7 @@ namespace DTO
             id = 0;
             maDauThu1 = 0;
             maDauThu1 = 0;
-            thoiGian = new DateTime();
+            thoiGian = DateTime.Now;
             diaDiem = string.Empty;
             maTrongTai = 0;
             maKetQua = 0;
