@@ -15,6 +15,13 @@ namespace DTO
         int maCapBac;
         int diemLienKich;
         DateTime thoiGianDatDiemLienKich;
+        bool daXoa;
+
+        public bool DaXoa
+        {
+            get { return daXoa; }
+            set { daXoa = value; }
+        }
 
         public int ID
         {
@@ -69,11 +76,12 @@ namespace DTO
             id = 0;
             hoTen = string.Empty;
             mssv = string.Empty;
-            gioiTinh = 0;
-            elo = 0;
+            gioiTinh = -1;
+            elo = -1;
             maCapBac = 1;
-            diemLienKich = 0;
+            diemLienKich = -1;
             thoiGianDatDiemLienKich = DateTime.Now;
+            daXoa = false;
         }
     }
 }

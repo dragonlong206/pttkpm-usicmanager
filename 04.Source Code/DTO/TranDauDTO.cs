@@ -71,6 +71,14 @@ namespace DTO
             set { diemRatingDp = value; }
         }
 
+        bool daXoa;
+
+        public bool DaXoa
+        {
+            get { return daXoa; }
+            set { daXoa = value; }
+        }
+
         public TranDauDTO()
         {
             id = 0;
@@ -82,6 +90,7 @@ namespace DTO
             maKetQua = 0;
             diemTiLeP = 0;
             diemRatingDp = 0;
+            daXoa = false;
         }
     }
 }

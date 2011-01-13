@@ -50,6 +50,14 @@ namespace DTO
             set { maCapToChuc = value; }
         }
 
+        bool daXoa;
+
+        public bool DaXoa
+        {
+            get { return daXoa; }
+            set { daXoa = value; }
+        }
+
         public GiaiDauDTO()
         {
             id = 0;
@@ -58,6 +66,7 @@ namespace DTO
             thoiGian = DateTime.Now;
             diaDiem = string.Empty;
             maCapToChuc = 0;
+            daXoa = false;
         }
     }
 }

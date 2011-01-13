@@ -71,6 +71,14 @@ namespace DTO
             set { gioiTinh = value; }
         }
 
+        bool daXoa;
+
+        public bool DaXoa
+        {
+            get { return daXoa; }
+            set { daXoa = value; }
+        }
+
         public CapBacHoiVienDTO()
         {
             id = 0;
@@ -81,6 +89,7 @@ namespace DTO
             maCapGiaiDauNhoNhat = 0;
             thuHangToiThieu = 0;
             gioiTinh = 0;
+            daXoa = false;
         }
     }
 }
