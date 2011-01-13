@@ -77,12 +77,35 @@ namespace TestDAO
         public void TestCapNhatHoiVien1()
         {
             HoiVienDTO hoiVienDTO = new HoiVienDTO();
-            hoiVienDTO.ID = 3;
+            hoiVienDTO.ID = 1;
             hoiVienDTO.HoTen = "Nguyễn Bảo Long";
             hoiVienDTO.GioiTinh = 1;
 
             HoiVienDAO hoiVienDAO = new HoiVienDAO();
             Assert.IsTrue(hoiVienDAO.CapNhatHoiVien(hoiVienDTO));
+        }
+
+        [TestMethod]
+        public void TestLayDanhSachHoiVien1()
+        {
+            HoiVienDAO hoiVienDAO = new HoiVienDAO();
+            List<HoiVienDTO> danhSachHoiVien = hoiVienDAO.LayDanhSachTatCaHoiVien();
+            Assert.IsTrue(danhSachHoiVien.Count > 0);
+        }
+
+        [TestMethod]
+        public void TestLayDanhSachHoiVienTheoTen1()
+        {
+            HoiVienDAO hoiVienDAO = new HoiVienDAO();
+            List<HoiVienDTO> danhSachHoiVien = hoiVienDAO.LayDanhSachHoiVienTheoHoTen("Bảo");
+            Assert.IsTrue(danhSachHoiVien.Count > 0);
+        }
+
+        [TestMethod]
+        public void TestXoaHoiVien1()
+        {
+            HoiVienDAO hoiVienDAO = new HoiVienDAO();
+            Assert.IsTrue(hoiVienDAO.XoaHoiVien(1));
         }
     }
 }
