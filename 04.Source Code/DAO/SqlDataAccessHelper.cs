@@ -76,9 +76,9 @@ namespace DAO
             }
             return dt;
         }
-        public static DataTable ExecuteQuery(String spName)
+        public static DataTable ExecuteQuery(String query)
         {
-            return ExecuteQuery(spName, null);
+            return ExecuteQuery(query, null);
         }
         #endregion
         #region ExecuteNoneQuery
