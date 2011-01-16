@@ -23,5 +23,13 @@ namespace GUI
             frmQuanLyHoiVien.WindowState = FormWindowState.Maximized;
             frmQuanLyHoiVien.Show();
         }
+
+        private void thêmTrậnĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThemTranDauGUI frmThemTranDau = new ThemTranDauGUI();
+            frmThemTranDau.MdiParent = this;
+            frmThemTranDau.WindowState = FormWindowState.Maximized;
+            frmThemTranDau.Show();
+        }
     }
 }

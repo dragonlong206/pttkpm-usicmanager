@@ -200,6 +200,23 @@ namespace DAO
             }
         }
 
+        public DataTable LayDanhSachHoTenVaMSSVTatCaHoiVien()
+        {
+            try
+            {
+                string sql = @"SELECT HV.ID, HoTen, MSSV 
+                                FROM HOI_VIEN AS HV 
+                                WHERE HV.DaXoa = 0";
+                DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql);
+                
+                return danhSachHoiVien;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public DataTable LayDanhSachHoiVienTheoHoTen(string hoTen)
         {
             try

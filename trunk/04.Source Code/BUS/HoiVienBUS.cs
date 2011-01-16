@@ -93,6 +93,18 @@ namespace BUS
             return null;
         }
 
+        public DataTable LayDanhSachHoTenVaMSSVTatCaHoiVien()
+        {
+            try
+            {
+                return hoiVienDAO.LayDanhSachHoTenVaMSSVTatCaHoiVien();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public DataTable LayHoiVienTheoMSSV(string MSSV)
         {
             if (MSSV != string.Empty)
