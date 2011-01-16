@@ -174,6 +174,7 @@ namespace GUI
             {
                 if (this.cheDoHienTai == CheDoXemHienTai.SUA)
                 {
+                    // TODO Kiểm tra MSSV đã tồn tại
                     HoiVienDTO hoiVienDTO = new HoiVienDTO();
                     if (hoiVienHienTai != null)
                     {
@@ -199,6 +200,7 @@ namespace GUI
                 }
                 else if (cheDoHienTai == CheDoXemHienTai.THEM)
                 {
+                    // TODO Kiểm tra MSSV đã tồn tại
                     HoiVienDTO hoiVienDTO = new HoiVienDTO();
                     
                     hoiVienDTO.HoTen = this.txtHoTen.Text;

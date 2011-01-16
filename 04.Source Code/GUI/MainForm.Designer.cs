@@ -46,8 +46,8 @@
             this.thayĐổiCáchTínhPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thayĐổiCáchTínhdpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetĐiểmLiênKíchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tănggiảmELOĐặtBiệtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,6 +97,7 @@
             this.thêmTrậnĐấuToolStripMenuItem.Name = "thêmTrậnĐấuToolStripMenuItem";
             this.thêmTrậnĐấuToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.thêmTrậnĐấuToolStripMenuItem.Text = "&Thêm trận đấu";
+            this.thêmTrậnĐấuToolStripMenuItem.Click += new System.EventHandler(this.thêmTrậnĐấuToolStripMenuItem_Click);
             // 
             // cậpNhậtThôngTinTrậnĐấuToolStripMenuItem
             // 
@@ -186,17 +187,17 @@
             this.resetĐiểmLiênKíchToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.resetĐiểmLiênKíchToolStripMenuItem.Text = "&Reset điểm liên kích";
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.aboutToolStripMenuItem.Text = "&About";
-            // 
             // tănggiảmELOĐặtBiệtToolStripMenuItem
             // 
             this.tănggiảmELOĐặtBiệtToolStripMenuItem.Name = "tănggiảmELOĐặtBiệtToolStripMenuItem";
             this.tănggiảmELOĐặtBiệtToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.tănggiảmELOĐặtBiệtToolStripMenuItem.Text = "Tăng &giảm ELO đặt biệt";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.aboutToolStripMenuItem.Text = "&About";
             // 
             // MainForm
             // 

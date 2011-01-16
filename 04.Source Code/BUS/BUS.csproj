@@ -47,7 +47,9 @@
   <ItemGroup>
     <Compile Include="CapBacHoiVienBUS.cs" />
     <Compile Include="HoiVienBUS.cs" />
+    <Compile Include="KetQuaTranDauBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TranDauBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
