@@ -3,6 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Data;
 using DAO;
 using DTO;
 
@@ -19,6 +20,7 @@ namespace TestDAO
             //
             // TODO: Add constructor logic here
             //
+            SqlDataAccessHelper.fileAddress = "../../ConnectionString.xml";
         }
 
         private TestContext testContextInstance;
@@ -89,16 +91,24 @@ namespace TestDAO
         public void TestLayDanhSachHoiVien1()
         {
             HoiVienDAO hoiVienDAO = new HoiVienDAO();
-            List<HoiVienDTO> danhSachHoiVien = hoiVienDAO.LayDanhSachTatCaHoiVien();
-            Assert.IsTrue(danhSachHoiVien.Count > 0);
+            DataTable danhSachHoiVien = hoiVienDAO.LayDanhSachTatCaHoiVien();
+            Assert.IsTrue(danhSachHoiVien.Rows.Count > 0);
         }
 
         [TestMethod]
         public void TestLayDanhSachHoiVienTheoTen1()
         {
             HoiVienDAO hoiVienDAO = new HoiVienDAO();
-            List<HoiVienDTO> danhSachHoiVien = hoiVienDAO.LayDanhSachHoiVienTheoHoTen("Bảo");
-            Assert.IsTrue(danhSachHoiVien.Count > 0);
+            DataTable danhSachHoiVien = hoiVienDAO.LayDanhSachHoiVienTheoHoTen("Long");
+            Assert.IsTrue(danhSachHoiVien.Rows.Count > 0);
+        }
+
+        [TestMethod]
+        public void TestLayDanhSachHoiVienTheoMSSV1()
+        {
+            HoiVienDAO hoiVienDAO = new HoiVienDAO();
+            DataTable danhSachHoiVien = hoiVienDAO.LayHoiVienTheoMSSV("0712255");
+            Assert.IsTrue(danhSachHoiVien.Rows.Count > 0);
         }
 
         [TestMethod]

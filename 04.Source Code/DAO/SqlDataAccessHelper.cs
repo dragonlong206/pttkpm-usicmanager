@@ -11,11 +11,13 @@ namespace DAO
     {
         #region ConnectionString
         protected static String connectionString;
+        public static string fileAddress = "ConnectionString.xml";
+
         public static String ConnectionString
         {
             get
             {
-                return ReadConnectionString("..\\..\\ConnectionString.xml");
+                return ReadConnectionString(fileAddress);
             }
         }
         public static String ReadConnectionString(String file)
@@ -126,5 +128,29 @@ namespace DAO
         }
         #endregion
 
+        public static DataTable AutoNumberedTable(DataTable SourceTable)
+        {
+
+            DataTable ResultTable = new DataTable();
+
+            DataColumn AutoNumberColumn = new DataColumn();
+
+            AutoNumberColumn.ColumnName = "STT";
+
+            AutoNumberColumn.DataType = typeof(int);
+
+            AutoNumberColumn.AutoIncrement = true;
+
+            AutoNumberColumn.AutoIncrementSeed = 1;
+
+            AutoNumberColumn.AutoIncrementStep = 1;
+
+            ResultTable.Columns.Add(AutoNumberColumn);
+
+            ResultTable.Merge(SourceTable);
+
+            return ResultTable;
+
+        }
     }
 }

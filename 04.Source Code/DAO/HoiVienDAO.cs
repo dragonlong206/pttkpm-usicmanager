@@ -173,72 +173,117 @@ namespace DAO
             return false;
         }
 
-        public List<HoiVienDTO> LayDanhSachTatCaHoiVien()
+        #region Select
+        public DataTable LayDanhSachTatCaHoiVien()
         {
-            List<HoiVienDTO> ketQua = new List<HoiVienDTO>();
+            //List<HoiVienDTO> ketQua = new List<HoiVienDTO>();
 
             try
             {
-                string sql = "SELECT * FROM HOI_VIEN WHERE DaXoa = 0";
+                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+                                FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
+                                WHERE HV.DaXoa = 0";
                 DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql);
-                if (danhSachHoiVien.Rows.Count > 0)
-                {
-                    for (int i = 0; i < danhSachHoiVien.Rows.Count; i++)
-                    {
-                        HoiVienDTO hoiVienDTO = new HoiVienDTO();
-                        hoiVienDTO.ID = int.Parse(danhSachHoiVien.Rows[i]["ID"].ToString());
-                        hoiVienDTO.HoTen = danhSachHoiVien.Rows[i]["HoTen"].ToString();
-                        hoiVienDTO.MSSV = danhSachHoiVien.Rows[i]["MSSV"].ToString();
-                        hoiVienDTO.GioiTinh = int.Parse(danhSachHoiVien.Rows[i]["GioiTinh"].ToString());
-                        hoiVienDTO.ELO = float.Parse(danhSachHoiVien.Rows[i]["ELO"].ToString());
-                        hoiVienDTO.MaCapBac = int.Parse(danhSachHoiVien.Rows[i]["MaCapBac"].ToString());
-                        hoiVienDTO.DiemLienKich = int.Parse(danhSachHoiVien.Rows[i]["DiemLienKich"].ToString());
-                        hoiVienDTO.ThoiGianDatDiemLienKich = DateTime.Parse(danhSachHoiVien.Rows[i]["ThoiGianDatDiemLienKich"].ToString());
-
-                        ketQua.Add(hoiVienDTO);
-                    }
-                }
+                //if (danhSachHoiVien.Rows.Count > 0)
+                //{
+                //    for (int i = 0; i < danhSachHoiVien.Rows.Count; i++)
+                //    {
+                //        HoiVienDTO hoiVienDTO = LayDuLieuHoiVienTuBang(danhSachHoiVien, i);
+                //        ketQua.Add(hoiVienDTO);
+                //    }
+                //}
+                return SqlDataAccessHelper.AutoNumberedTable(danhSachHoiVien);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
-            return ketQua;
         }
 
-        public List<HoiVienDTO> LayDanhSachHoiVienTheoHoTen(string hoTen)
+        public DataTable LayDanhSachHoiVienTheoHoTen(string hoTen)
         {
-            List<HoiVienDTO> ketQua = new List<HoiVienDTO>();
-
             try
             {
-                string sql = "SELECT * FROM HOI_VIEN WHERE DaXoa = 0 AND HoTen LIKE '*" + hoTen + "*'";
-                DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql);
-                if (danhSachHoiVien.Rows.Count > 0)
-                {
-                    for (int i = 0; i < danhSachHoiVien.Rows.Count; i++)
-                    {
-                        HoiVienDTO hoiVienDTO = new HoiVienDTO();
-                        hoiVienDTO.ID = int.Parse(danhSachHoiVien.Rows[i]["ID"].ToString());
-                        hoiVienDTO.HoTen = danhSachHoiVien.Rows[i]["HoTen"].ToString();
-                        hoiVienDTO.MSSV = danhSachHoiVien.Rows[i]["MSSV"].ToString();
-                        hoiVienDTO.GioiTinh = int.Parse(danhSachHoiVien.Rows[i]["GioiTinh"].ToString());
-                        hoiVienDTO.ELO = float.Parse(danhSachHoiVien.Rows[i]["ELO"].ToString());
-                        hoiVienDTO.MaCapBac = int.Parse(danhSachHoiVien.Rows[i]["MaCapBac"].ToString());
-                        hoiVienDTO.DiemLienKich = int.Parse(danhSachHoiVien.Rows[i]["DiemLienKich"].ToString());
-                        hoiVienDTO.ThoiGianDatDiemLienKich = DateTime.Parse(danhSachHoiVien.Rows[i]["ThoiGianDatDiemLienKich"].ToString());
+                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+                                FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
+                                WHERE HV.DaXoa = 0 AND HoTen LIKE '%" + hoTen + "%'";
 
-                        ketQua.Add(hoiVienDTO);
-                    }
-                }
+                DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql);
+
+                return SqlDataAccessHelper.AutoNumberedTable(danhSachHoiVien);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
-            return ketQua;
         }
+
+        public DataTable LayHoiVienTheoMSSV(string MSSV)
+        {
+            string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+                                FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
+                                WHERE HV.DaXoa = 0 AND MSSV = ?";
+
+            OleDbParameter prMSSV = new OleDbParameter("@MSSV", OleDbType.VarChar);
+            prMSSV.Value = MSSV;
+            List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+            sqlParams.Add(prMSSV);
+
+            DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql, sqlParams);
+
+            return SqlDataAccessHelper.AutoNumberedTable(danhSachHoiVien);
+        }
+
+        public static HoiVienDTO LayDuLieuHoiVienTuBang(DataTable danhSachHoiVien, int i)
+        {
+            HoiVienDTO hoiVienDTO = new HoiVienDTO();
+            int temp1;
+            bool success;
+            success = int.TryParse(danhSachHoiVien.Rows[i]["ID"].ToString(), out temp1);
+            if (success)
+            {
+                hoiVienDTO.ID = temp1;
+            }
+
+            hoiVienDTO.HoTen = danhSachHoiVien.Rows[i]["HoTen"].ToString();
+
+            hoiVienDTO.MSSV = danhSachHoiVien.Rows[i]["MSSV"].ToString();
+
+            success = int.TryParse(danhSachHoiVien.Rows[i]["GioiTinh"].ToString(), out temp1);
+            if (success)
+            {
+                hoiVienDTO.GioiTinh = temp1;
+            }
+
+            float temp2;
+            success = float.TryParse(danhSachHoiVien.Rows[i]["ELO"].ToString(), out temp2);
+            if (success)
+            {
+                hoiVienDTO.ELO = temp2;
+            }
+
+            success = int.TryParse(danhSachHoiVien.Rows[i]["MaCapBac"].ToString(), out temp1);
+            if (success)
+            {
+                hoiVienDTO.MaCapBac = temp1;
+                CapBacHoiVienDAO capBacHoiVienDAO = new CapBacHoiVienDAO();
+                hoiVienDTO.TenCapBac = capBacHoiVienDAO.LayTenCapBacTheoMaCapBac(temp1);
+            }
+
+            success = int.TryParse(danhSachHoiVien.Rows[i]["DiemLienKich"].ToString(), out temp1);
+            if (success)
+            {
+                hoiVienDTO.DiemLienKich = temp1;
+            }
+
+            DateTime temp3;
+            success = DateTime.TryParse(danhSachHoiVien.Rows[i]["ThoiGianDatDiemLienKich"].ToString(), out temp3);
+            if (success)
+            {
+                hoiVienDTO.ThoiGianDatDiemLienKich = temp3;
+            }
+            return hoiVienDTO;
+        }
+        #endregion
     }
 }

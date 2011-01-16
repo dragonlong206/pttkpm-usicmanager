@@ -48,6 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HoiVienGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoiVienGUI.Designer.cs">
+      <DependentUpon>HoiVienGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHoiVien_ChiTiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHoiVien_ChiTiet.Designer.cs">
+      <DependentUpon>ucHoiVien_ChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +68,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HoiVienGUI.resx">
+      <DependentUpon>HoiVienGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHoiVien_ChiTiet.resx">
+      <DependentUpon>ucHoiVien_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
