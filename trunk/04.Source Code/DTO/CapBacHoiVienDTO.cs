@@ -7,7 +7,7 @@ namespace DTO
 {
     public class CapBacHoiVienDTO
     {
-        int id;
+        protected int id;
 
         public int ID
         {
@@ -15,7 +15,7 @@ namespace DTO
             set { id = value; }
         }
 
-        string tenCapBac;
+        protected string tenCapBac;
 
         public string TenCapBac
         {
@@ -23,7 +23,7 @@ namespace DTO
             set { tenCapBac = value; }
         }
 
-        int stt;
+        protected int stt;
 
         public int STT
         {
@@ -31,7 +31,7 @@ namespace DTO
             set { stt = value; }
         }
 
-        float eloNhoNhat;
+        protected float eloNhoNhat;
 
         public float EloNhoNhat
         {
@@ -39,7 +39,7 @@ namespace DTO
             set { eloNhoNhat = value; }
         }
 
-        int soGiaiDauToiThieu;
+        protected int soGiaiDauToiThieu;
 
         public int SoGiaiDauToiThieu
         {
@@ -47,7 +47,7 @@ namespace DTO
             set { soGiaiDauToiThieu = value; }
         }
 
-        int maCapGiaiDauNhoNhat;
+        protected int maCapGiaiDauNhoNhat;
 
         public int MaCapGiaiDauNhoNhat
         {
@@ -55,7 +55,7 @@ namespace DTO
             set { maCapGiaiDauNhoNhat = value; }
         }
 
-        int thuHangToiThieu;
+        protected int thuHangToiThieu;
 
         public int ThuHangToiThieu
         {
@@ -63,7 +63,7 @@ namespace DTO
             set { thuHangToiThieu = value; }
         }
 
-        int gioiTinh;
+        protected int gioiTinh;
 
         public int GioiTinh
         {
@@ -71,12 +71,20 @@ namespace DTO
             set { gioiTinh = value; }
         }
 
-        bool daXoa;
+        protected bool daXoa;
 
         public bool DaXoa
         {
             get { return daXoa; }
             set { daXoa = value; }
+        }
+
+        protected int loaiCapBac;
+
+        public int LoaiCapBac
+        {
+            get { return loaiCapBac; }
+            set { loaiCapBac = value; }
         }
 
         public CapBacHoiVienDTO()
@@ -90,6 +98,7 @@ namespace DTO
             thuHangToiThieu = 0;
             gioiTinh = 0;
             daXoa = false;
+            loaiCapBac = 1;
         }
     }
 }

@@ -15,5 +15,13 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void quảnLýhộiViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HoiVienGUI frmQuanLyHoiVien = new HoiVienGUI();
+            frmQuanLyHoiVien.MdiParent = this;
+            frmQuanLyHoiVien.WindowState = FormWindowState.Maximized;
+            frmQuanLyHoiVien.Show();
+        }
     }
 }
