@@ -42,15 +42,19 @@ namespace GUI
         {
             try
             {
-                bool resetThanhCong = (new HoiVienBUS()).ResetToanBoDiemLienKich();
+                DialogResult luaChon = MessageBox.Show("Bạn có chắc muốn reset toàn bộ điểm liên kích", "Xac nhan", MessageBoxButtons.YesNo);
+                if (luaChon == DialogResult.Yes)
+                {
+                    bool resetThanhCong = (new HoiVienBUS()).ResetToanBoDiemLienKich();
 
-                if (resetThanhCong)
-                {
-                    MessageBox.Show("Reset thành công");
-                }
-                else
-                {
-                    MessageBox.Show("Reset thất bại");
+                    if (resetThanhCong)
+                    {
+                        MessageBox.Show("Reset thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Reset thất bại");
+                    }
                 }
             }
             catch (Exception ex)
@@ -65,6 +69,27 @@ namespace GUI
             frmThemGiaDau.MdiParent = this;
             //frmThemGiaDau.WindowState = FormWindowState.Maximized;
             frmThemGiaDau.Show();
+        }
+
+        private void thayĐổiCáchTínhPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThayDoiPGUI frmThayDoiP = new ThayDoiPGUI();
+            frmThayDoiP.MdiParent = this;
+            frmThayDoiP.Show();
+        }
+
+        private void cậpNhậtThôngTinGiảiĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CapNhatGiaiDauGUI frmCapNhatGiaiDau = new CapNhatGiaiDauGUI();
+            frmCapNhatGiaiDau.MdiParent = this;
+            frmCapNhatGiaiDau.Show();
+        }
+
+        private void xóaGiảiĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XoaGiaiDauGUI frmXoaGiaiDau = new XoaGiaiDauGUI();
+            frmXoaGiaiDau.MdiParent = this;
+            frmXoaGiaiDau.Show();
         }
     }
 }

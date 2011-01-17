@@ -10,7 +10,7 @@ namespace BUS
 {
     class GiaiDauBUS
     {
-        GiaiDauDAO giaiDauDAO = new GiaiDauDAO();
+        GiaiDauDAO giaiDauDAO;
 
         public GiaiDauBUS()
         {
