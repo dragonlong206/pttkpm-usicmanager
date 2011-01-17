@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B8D1E9CE-65EB-4DF5-8903-CCF776A71FE6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -56,6 +56,24 @@
     </Compile>
     <Compile Include="CapNhatGiaiDauGUI.Designer.cs">
       <DependentUpon>CapNhatGiaiDauGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TangGiamELOGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TangGiamELOGUI.Designer.cs">
+      <DependentUpon>TangGiamELOGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThayDoiDpGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThayDoiDpGUI.Designer.cs">
+      <DependentUpon>ThayDoiDpGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThayDoiPGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThayDoiPGUI.Designer.cs">
+      <DependentUpon>ThayDoiPGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemGiaiDauGUI.cs">
       <SubType>Form</SubType>
@@ -122,6 +140,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

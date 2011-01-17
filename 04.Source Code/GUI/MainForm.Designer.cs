@@ -146,6 +146,7 @@
             this.thêmGiảiĐấuToolStripMenuItem.Name = "thêmGiảiĐấuToolStripMenuItem";
             this.thêmGiảiĐấuToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.thêmGiảiĐấuToolStripMenuItem.Text = "&Thêm giải đấu";
+            this.thêmGiảiĐấuToolStripMenuItem.Click += new System.EventHandler(this.thêmGiảiĐấuToolStripMenuItem_Click);
             // 
             // cậpNhậtThôngTinGiảiĐấuToolStripMenuItem
             // 
