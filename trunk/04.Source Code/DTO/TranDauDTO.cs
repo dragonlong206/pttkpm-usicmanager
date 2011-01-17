@@ -56,19 +56,19 @@ namespace DTO
             get { return maKetQua; }
             set { maKetQua = value; }
         }
-        float diemTiLeP;
+        double p1;
 
-        public float DiemTiLeP
+        public double P1
         {
-            get { return diemTiLeP; }
-            set { diemTiLeP = value; }
+            get { return p1; }
+            set { p1 = value; }
         }
-        float diemRatingDp;
+        double p2;
 
-        public float DiemRatingDp
+        public double P2
         {
-            get { return diemRatingDp; }
-            set { diemRatingDp = value; }
+            get { return p2; }
+            set { p2 = value; }
         }
 
         bool daXoa;
@@ -88,8 +88,8 @@ namespace DTO
             diaDiem = string.Empty;
             maTrongTai = 0;
             maKetQua = 0;
-            diemTiLeP = 0;
-            diemRatingDp = 0;
+            p1 = 0;
+            P2 = 0;
             daXoa = false;
         }
     }

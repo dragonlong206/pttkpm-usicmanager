@@ -82,6 +82,35 @@ namespace GUI
                 DataGridViewComboBoxEditingControl cbo = e.Control as DataGridViewComboBoxEditingControl;
                 cbo.DropDownStyle = ComboBoxStyle.DropDown;
                 cbo.KeyPress += new KeyPressEventHandler(cbo_KeyPress);
+                cbo.SelectedIndexChanged += new EventHandler(cbo_SelectedIndexChanged);
+            }
+        }
+
+        void cbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataGridViewComboBoxEditingControl cbo = (DataGridViewComboBoxEditingControl)sender;
+            //int col = this.dgvDanhSachTranDau.CurrentCell.ColumnIndex;
+            if (cbo.SelectedIndex >= 0 && cbo.SelectedValue is int)
+            {
+                int id = (int)cbo.SelectedValue;
+                int chiSoCotHienTai = this.dgvDanhSachTranDau.CurrentCell.ColumnIndex;
+                DataGridViewRow dongHienTai = this.dgvDanhSachTranDau.CurrentRow;
+                if (chiSoCotHienTai == 1)
+                {
+                    dongHienTai.Cells["HoTen1"].Value = id;
+                }
+                else if (chiSoCotHienTai == 2)
+                {
+                    dongHienTai.Cells["MSSV1"].Value = id;
+                }
+                else if (chiSoCotHienTai == 3)
+                {
+                    dongHienTai.Cells["HoTen2"].Value = id;
+                }
+                else if (chiSoCotHienTai == 4)
+                {
+                    dongHienTai.Cells["MSSV2"].Value = id;
+                }
             }
         }
 
@@ -163,39 +192,49 @@ namespace GUI
         {
             try
             {
+                Cursor = Cursors.WaitCursor;
                 TranDauBUS tranDauBUS = new TranDauBUS();
-                
+
                 bool themThanhCong = true;
                 int soDongThucTe = this.dgvDanhSachTranDau.Rows.Count - 1;
-                for (int i = 0; i < soDongThucTe; i++)
+                if (soDongThucTe == 0)
                 {
-                    TranDauDTO tranDauDTO = LayThongTinTranDauTuBang(this.dgvDanhSachTranDau, i);
-                    if (tranDauDTO != null)
-                    {
-                        try
-                        {
-                            themThanhCong &= tranDauBUS.ThemTranDau(tranDauDTO);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-                    }
-                }
-
-                if (themThanhCong)
-                {
-                    MessageBox.Show("Thêm thành công");
+                    MessageBox.Show("Chưa có dữ liệu");
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại");
-                }
+                    for (int i = 0; i < soDongThucTe; i++)
+                    {
+                        try
+                        {
+                            TranDauDTO tranDauDTO = LayThongTinTranDauTuBang(this.dgvDanhSachTranDau, i);
+                            if (tranDauDTO != null)
+                            {
+                                themThanhCong &= tranDauBUS.ThemTranDau(tranDauDTO);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Dòng " + (i + 1) + " :" + ex.Message);
+                            themThanhCong = false;
+                        }
+                    }
+
+                    if (themThanhCong)
+                    {
+                        MessageBox.Show("Lưu thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lưu thất bại");
+                    }
+                }                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            Cursor = Cursors.Default;
         }
 
         private void btnNhapLai_Click(object sender, EventArgs e)
@@ -214,19 +253,46 @@ namespace GUI
             {
                 TranDauDTO tranDauDTO = new TranDauDTO();
 
-                tranDauDTO.MaDauThu1 = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["MSSV1"].Value.ToString());
-                tranDauDTO.MaDauThu2 = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["MSSV2"].Value.ToString());
+                if (bangDuLieu.Rows[dongCanLay].Cells["MSSV1"].Value != null)
+                {
+                    tranDauDTO.MaDauThu1 = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["MSSV1"].Value.ToString());
+                }
+                else
+                {
+                    throw new Exception("Đấu thủ 1 không thể để trống");
+                }
+
+                if (bangDuLieu.Rows[dongCanLay].Cells["MSSV2"].Value != null)
+                {
+                    tranDauDTO.MaDauThu2 = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["MSSV2"].Value.ToString());
+                }
+                else
+                {
+                    throw new Exception("Đấu thủ 2 không thể để trống");
+                }
+
                 tranDauDTO.ThoiGian = DateTime.Parse(bangDuLieu.Rows[dongCanLay].Cells["ThoiGian"].Value.ToString());
-                tranDauDTO.DiaDiem = bangDuLieu.Rows[dongCanLay].Cells["DiaDiem"].Value.ToString();
-                tranDauDTO.MaTrongTai = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["TrongTai"].Value.ToString());
-                tranDauDTO.MaKetQua = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["KetQua"].Value.ToString());
+
+                if (bangDuLieu.Rows[dongCanLay].Cells["DiaDiem"].Value != null)
+                {
+                    tranDauDTO.DiaDiem = bangDuLieu.Rows[dongCanLay].Cells["DiaDiem"].Value.ToString();
+                }
+
+                if (bangDuLieu.Rows[dongCanLay].Cells["TrongTai"].Value != null)
+                {
+                    tranDauDTO.MaTrongTai = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["TrongTai"].Value.ToString());
+                }
+
+                if (bangDuLieu.Rows[dongCanLay].Cells["KetQua"].Value != null)
+                {
+                    tranDauDTO.MaKetQua = int.Parse(bangDuLieu.Rows[dongCanLay].Cells["KetQua"].Value.ToString());
+                }
 
                 return tranDauDTO;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-                return null;
+                throw ex;
             }
         }
     }

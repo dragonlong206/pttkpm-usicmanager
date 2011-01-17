@@ -43,17 +43,24 @@ namespace GUI
 
         private void dgvDanhSachHoiVien_SelectionChanged(object sender, EventArgs e)
         {
-            if (this.dgvDanhSachHoiVien.SelectedRows.Count > 0)
+            try
             {
-                int selectedRow = int.Parse(this.dgvDanhSachHoiVien.SelectedRows[0].Cells["STT"].Value.ToString()) - 1;
-                if (selectedRow >= 0)
+                if (this.dgvDanhSachHoiVien.SelectedRows.Count > 0)
                 {
-                    if (danhSachHoiVien != null && danhSachHoiVien.Rows.Count > 0)
+                    int selectedRow = int.Parse(this.dgvDanhSachHoiVien.SelectedRows[0].Cells["STT"].Value.ToString()) - 1;
+                    if (selectedRow >= 0)
                     {
-                        HoiVienDTO hoiVienDTO = HoiVienBUS.LayDuLieuHoiVienTuBang(danhSachHoiVien, selectedRow);
-                        ucHoiVien_ChiTiet1.GanDuLieu(hoiVienDTO);
+                        if (danhSachHoiVien != null && danhSachHoiVien.Rows.Count > 0)
+                        {
+                            HoiVienDTO hoiVienDTO = HoiVienBUS.LayDuLieuHoiVienTuBang(danhSachHoiVien, selectedRow);
+                            ucHoiVien_ChiTiet1.GanDuLieu(hoiVienDTO);
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -110,7 +117,7 @@ namespace GUI
                             newRow["ELO"] = danhSachTheoMSSV.Rows[0]["ELO"];
                             newRow["TenCapBac"] = danhSachTheoMSSV.Rows[0]["TenCapBac"];
                             newRow["MaCapBac"] = danhSachTheoMSSV.Rows[0]["MaCapBac"];
-                            newRow["DiemLienKich"] = danhSachTheoMSSV.Rows[0]["DiemLienKich"];
+                            newRow["DiemLienKich"] = danhSachTheoMSSV.Rows[0]["DiemLienKichCaoNhat"];
                             newRow["ThoiGianDatDiemLienKich"] = danhSachTheoMSSV.Rows[0]["ThoiGianDatDiemLienKich"];
                             danhSachHoiVien.Rows.Add(newRow);
                         }

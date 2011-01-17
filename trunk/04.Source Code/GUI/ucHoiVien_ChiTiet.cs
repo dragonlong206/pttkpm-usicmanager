@@ -285,9 +285,20 @@ namespace GUI
             }
 
             this.txtELO.Text = hoiVienHienTai.ELO.ToString();
+
             this.txtCapBac.Text = hoiVienHienTai.TenCapBac;
-            this.txtDiemLienKich.Text = hoiVienHienTai.DiemLienKich.ToString();
-            this.txtThoiGianDat.Text = hoiVienHienTai.ThoiGianDatDiemLienKich.ToString("dd/MM/yyyy");
+
+            this.txtDiemLienKich.Text = hoiVienHienTai.DiemLienKichCaoNhat.ToString();
+
+            if (hoiVienHienTai.DiemLienKichCaoNhat > 0)
+            {
+                this.txtThoiGianDat.Text = hoiVienHienTai.ThoiGianDatDiemLienKich.ToString("dd/MM/yyyy");
+            }
+            else
+            {
+                this.txtThoiGianDat.Text = "";
+            }
+
             if (CheDoHienTai == CheDoXemHienTai.SUA)
             {
                 this.cboGioiTinh.SelectedItem = this.txtGioiTinh.Text;
