@@ -153,12 +153,14 @@
             this.cậpNhậtThôngTinGiảiĐấuToolStripMenuItem.Name = "cậpNhậtThôngTinGiảiĐấuToolStripMenuItem";
             this.cậpNhậtThôngTinGiảiĐấuToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.cậpNhậtThôngTinGiảiĐấuToolStripMenuItem.Text = "&Cập nhật thông tin giải đấu";
+            this.cậpNhậtThôngTinGiảiĐấuToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtThôngTinGiảiĐấuToolStripMenuItem_Click);
             // 
             // xóaGiảiĐấuToolStripMenuItem
             // 
             this.xóaGiảiĐấuToolStripMenuItem.Name = "xóaGiảiĐấuToolStripMenuItem";
             this.xóaGiảiĐấuToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.xóaGiảiĐấuToolStripMenuItem.Text = "&Xóa giải đấu";
+            this.xóaGiảiĐấuToolStripMenuItem.Click += new System.EventHandler(this.xóaGiảiĐấuToolStripMenuItem_Click);
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -176,6 +178,7 @@
             this.thayĐổiCáchTínhPToolStripMenuItem.Name = "thayĐổiCáchTínhPToolStripMenuItem";
             this.thayĐổiCáchTínhPToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.thayĐổiCáchTínhPToolStripMenuItem.Text = "Thay đổi cách tính &p";
+            this.thayĐổiCáchTínhPToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiCáchTínhPToolStripMenuItem_Click);
             // 
             // thayĐổiCáchTínhdpToolStripMenuItem
             // 
