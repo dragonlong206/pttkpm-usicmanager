@@ -9,7 +9,7 @@ using DAO;
 namespace BUS
 {
     public class HoiVienBUS
-    {
+    {        
         HoiVienDAO hoiVienDAO = new HoiVienDAO();
 
         public HoiVienBUS()

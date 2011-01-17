@@ -40,6 +40,7 @@
             this.DiemLienKich = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbChiTietHoiVien = new System.Windows.Forms.GroupBox();
             this.pnlChiTietHoiVien = new System.Windows.Forms.Panel();
+            this.ucHoiVien_ChiTiet1 = new GUI.ucHoiVien_ChiTiet();
             this.btnImport = new System.Windows.Forms.Button();
             this.ttToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btnExport = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.txtHuongDan = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.ucHoiVien_ChiTiet1 = new GUI.ucHoiVien_ChiTiet();
             this.grbDanhSachHoiVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoiVien)).BeginInit();
             this.grbChiTietHoiVien.SuspendLayout();
@@ -105,6 +105,7 @@
             this.dgvDanhSachHoiVien.Size = new System.Drawing.Size(516, 456);
             this.dgvDanhSachHoiVien.TabIndex = 0;
             this.dgvDanhSachHoiVien.SelectionChanged += new System.EventHandler(this.dgvDanhSachHoiVien_SelectionChanged);
+            this.dgvDanhSachHoiVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoiVien_CellContentClick);
             // 
             // STT
             // 
@@ -172,6 +173,19 @@
             this.pnlChiTietHoiVien.Name = "pnlChiTietHoiVien";
             this.pnlChiTietHoiVien.Size = new System.Drawing.Size(233, 303);
             this.pnlChiTietHoiVien.TabIndex = 0;
+            // 
+            // ucHoiVien_ChiTiet1
+            // 
+            this.ucHoiVien_ChiTiet1.Ancestor = null;
+            this.ucHoiVien_ChiTiet1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.ucHoiVien_ChiTiet1.AutoSize = true;
+            this.ucHoiVien_ChiTiet1.CheDoHienTai = GUI.CheDoXemHienTai.XEM;
+            this.ucHoiVien_ChiTiet1.Location = new System.Drawing.Point(0, 0);
+            this.ucHoiVien_ChiTiet1.Name = "ucHoiVien_ChiTiet1";
+            this.ucHoiVien_ChiTiet1.Size = new System.Drawing.Size(233, 303);
+            this.ucHoiVien_ChiTiet1.TabIndex = 0;
+            this.ucHoiVien_ChiTiet1.Load += new System.EventHandler(this.ucHoiVien_ChiTiet1_Load);
             // 
             // btnImport
             // 
@@ -287,18 +301,6 @@
             this.btnRefresh.Text = "&Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // ucHoiVien_ChiTiet1
-            // 
-            this.ucHoiVien_ChiTiet1.Ancestor = null;
-            this.ucHoiVien_ChiTiet1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.ucHoiVien_ChiTiet1.AutoSize = true;
-            this.ucHoiVien_ChiTiet1.CheDoHienTai = GUI.CheDoXemHienTai.XEM;
-            this.ucHoiVien_ChiTiet1.Location = new System.Drawing.Point(0, 0);
-            this.ucHoiVien_ChiTiet1.Name = "ucHoiVien_ChiTiet1";
-            this.ucHoiVien_ChiTiet1.Size = new System.Drawing.Size(233, 303);
-            this.ucHoiVien_ChiTiet1.TabIndex = 0;
             // 
             // HoiVienGUI
             // 
