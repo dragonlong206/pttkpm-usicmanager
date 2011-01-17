@@ -49,11 +49,13 @@
     <Compile Include="CapToChucGiaiDauDAO.cs" />
     <Compile Include="ChuyenDoiELOSangPDAO.cs" />
     <Compile Include="ChuyenDoiPSangDpDAO.cs" />
+    <Compile Include="DiemThuongDAO.cs" />
     <Compile Include="HoiVienDAO.cs" />
     <Compile Include="KetQuaTranDauDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDataAccessHelper.cs" />
     <Compile Include="ThamGiaGiaiDauDAO.cs" />
+    <Compile Include="ThamSoDAO.cs" />
     <Compile Include="TranDauDAO.cs" />
   </ItemGroup>
   <ItemGroup>

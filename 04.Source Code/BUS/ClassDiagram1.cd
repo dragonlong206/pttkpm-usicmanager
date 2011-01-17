@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BUS.CapBacHoiVienBUS" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAwAABAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>CapBacHoiVienBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CapBacHoiVienThuongBUS" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>CapBacHoiVienThuongBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CapBacHoiVienToiCaoBUS" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAIAA=</HashCode>
+      <FileName>CapBacHoiVienToiCaoBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.DiemThuongBUS" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DiemThuongBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.HoiVienBUS" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAIAEQAIAAAAAAAACAEAgSBAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>HoiVienBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.KetQuaTranDauBUS" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KetQuaTranDauBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.ThamSoBUS" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThamSoBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.TranDauBUS" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>TranDauBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

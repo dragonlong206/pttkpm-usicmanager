@@ -43,6 +43,49 @@ namespace BUS
                 throw ex;
             }
         }
+
+        public bool ResetDiemLienKichCaoNhat(int maHoiVien)
+        {
+            try
+            {
+                return hoiVienDAO.ResetDiemLienKichCaoNhat(maHoiVien);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool ResetToanBoDiemLienKich()
+        {
+            try
+            {
+                DataTable danhSachHoiVien = hoiVienDAO.LayDanhSachTatCaHoiVien();
+                bool resetThanhCong = true;
+
+                if (danhSachHoiVien.Rows.Count > 0)
+                {
+                    for (int i = 0; i < danhSachHoiVien.Rows.Count; i++)
+                    {
+                        try
+                        {
+                            int maHoiVien = int.Parse(danhSachHoiVien.Rows[i]["ID"].ToString());
+                            resetThanhCong &= hoiVienDAO.ResetDiemLienKichCaoNhat(maHoiVien);
+                        }
+                        catch (Exception ex)
+                        {
+                            resetThanhCong = false;
+                        }
+                    }
+                }
+
+                return resetThanhCong;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         #endregion
 
         #region Delete
