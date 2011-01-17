@@ -254,6 +254,32 @@ namespace DAO
             }
         }
 
+        public bool ResetDiemLienKichCaoNhat(int maHoiVien)
+        {
+            try
+            {
+                string sql = "UPDATE HOI_VIEN SET DiemLienKichCaoNhat = 0 WHERE ID = ?";
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@ID", OleDbType.Integer);
+                prMaHoiVien.Value = maHoiVien;
+                sqlParams.Add(prMaHoiVien);
+
+                int soDongCapNhat = SqlDataAccessHelper.ExecuteNoneQuery(sql, sqlParams);
+                if (soDongCapNhat == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public bool CapNhatCapBac(int maHoiVien, int maCapBacMoi)
         {
             try

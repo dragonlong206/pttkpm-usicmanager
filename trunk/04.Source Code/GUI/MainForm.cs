@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using BUS;
 
 namespace GUI
 {
@@ -30,6 +31,32 @@ namespace GUI
             frmThemTranDau.MdiParent = this;
             frmThemTranDau.WindowState = FormWindowState.Maximized;
             frmThemTranDau.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void resetĐiểmLiênKíchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool resetThanhCong = (new HoiVienBUS()).ResetToanBoDiemLienKich();
+
+                if (resetThanhCong)
+                {
+                    MessageBox.Show("Reset thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Reset thất bại");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

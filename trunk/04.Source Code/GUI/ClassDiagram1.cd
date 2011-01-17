@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GUI.CalendarColumn" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>CalendarColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.CalendarCell" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAABAAAAAAAAAAAAAAAEAAAAAAAAAAAEAA=</HashCode>
+      <FileName>CalendarColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.CalendarEditingControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACAIAAIAAAEAAgAAAQAAAAAAAQAMAAUAAAAAIAAA=</HashCode>
+      <FileName>CalendarColumn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GUI.CapNhatGiaiDauGUI" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAECAAEACAAIAEgAAABAABAAgIAA=</HashCode>
+      <FileName>CapNhatGiaiDauGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.HoiVienGUI" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAgSAIBACCAUHAAQCACAIAASAxEAKAEgABAARAEoICA=</HashCode>
+      <FileName>HoiVienGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.MainForm" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAyAAAQAACABABAAAACCgojCQAiAAAAAARACEAgAEAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Program" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.TangGiamELOGUI" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TangGiamELOGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.ThayDoiDpGUI" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThayDoiDpGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.ThayDoiPGUI" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThayDoiPGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.ThemGiaiDauGUI" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgYIIAgCCEFQAIQoEGIAAgmAAQAAAgACBAABREgICI=</HashCode>
+      <FileName>ThemGiaiDauGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.ThemTranDauGUI" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAApAQDgAAACRgAGBAEECABAAAAAAAAACFCAgIYA=</HashCode>
+      <FileName>ThemTranDauGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.ucHoiVien_ChiTiet" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgoAAIEgKCAAJDAAOACIoAICAQGAAECAASACcCEAAGE=</HashCode>
+      <FileName>ucHoiVien_ChiTiet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.XoaGiaiDauGUI" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAACAQAECAAEACAAIAEgAAABAABAAgIAA=</HashCode>
+      <FileName>XoaGiaiDauGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Resources" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GUI.CheDoXemHienTai" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAAAAABAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ucHoiVien_ChiTiet.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GUI.GioiTinh" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAIAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ucHoiVien_ChiTiet.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
