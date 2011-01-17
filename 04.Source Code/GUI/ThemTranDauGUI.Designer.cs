@@ -30,10 +30,12 @@
         {
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.dgvDanhSachTranDau = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MSSV1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.HoTen1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.MSSV2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.HoTen2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrongTai = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.KetQua = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -41,8 +43,6 @@
             this.btnNhapLai = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachTranDau)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,14 @@
             this.dgvDanhSachTranDau.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvDanhSachTranDau_RowsAdded);
             this.dgvDanhSachTranDau.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvDanhSachTranDau_EditingControlShowing);
             this.dgvDanhSachTranDau.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvDanhSachTranDau_RowsRemoved);
+            //this.dgvDanhSachTranDau.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachTranDau_CellContentClick);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            this.STT.Width = 50;
             // 
             // MSSV1
             // 
@@ -113,6 +121,12 @@
             this.HoTen2.Name = "HoTen2";
             this.HoTen2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.HoTen2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // DiaDiem
+            // 
+            this.DiaDiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiaDiem.HeaderText = "Địa điểm";
+            this.DiaDiem.Name = "DiaDiem";
             // 
             // TrongTai
             // 
@@ -174,19 +188,6 @@
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn2.HeaderText = "Địa điểm";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 50;
-            // 
-            // DiaDiem
-            // 
-            this.DiaDiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiaDiem.HeaderText = "Địa điểm";
-            this.DiaDiem.Name = "DiaDiem";
             // 
             // ThemTranDauGUI
             // 

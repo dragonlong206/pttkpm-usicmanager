@@ -160,5 +160,15 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void ucHoiVien_ChiTiet1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDanhSachHoiVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
