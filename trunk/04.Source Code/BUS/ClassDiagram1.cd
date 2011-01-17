@@ -28,29 +28,36 @@
       <FileName>DiemThuongBUS.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BUS.HoiVienBUS" Collapsed="true">
+  <Class Name="BUS.GiaiDauBUS" Collapsed="true">
     <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAACAAAAAAAAAAAAICAACAAA=</HashCode>
+      <FileName>GiaiDauBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.HoiVienBUS" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAIAEQAIAAAAAAAACAEAgSBAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>HoiVienBUS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BUS.KetQuaTranDauBUS" Collapsed="true">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>KetQuaTranDauBUS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BUS.ThamSoBUS" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Position X="7" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ThamSoBUS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BUS.TranDauBUS" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="8.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAQAAAAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>TranDauBUS.cs</FileName>

@@ -52,14 +52,18 @@
             this.grbDanhSach = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvDanhSachHoiVien = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ELO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnImport = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ELO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbChiTietGiaiDau.SuspendLayout();
             this.pnlChiTietGiaiDau.SuspendLayout();
             this.grbChiTietDiemThuong.SuspendLayout();
@@ -271,6 +275,9 @@
             // 
             // grbDanhSach
             // 
+            this.grbDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.grbDanhSach.Controls.Add(this.panel2);
             this.grbDanhSach.Location = new System.Drawing.Point(307, 52);
             this.grbDanhSach.Name = "grbDanhSach";
@@ -297,15 +304,80 @@
             this.HoTen,
             this.ELO});
             this.dgvDanhSachHoiVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDanhSachHoiVien.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgvDanhSachHoiVien.Location = new System.Drawing.Point(0, 0);
             this.dgvDanhSachHoiVien.MultiSelect = false;
             this.dgvDanhSachHoiVien.Name = "dgvDanhSachHoiVien";
-            this.dgvDanhSachHoiVien.ReadOnly = true;
             this.dgvDanhSachHoiVien.RowHeadersVisible = false;
             this.dgvDanhSachHoiVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDanhSachHoiVien.Size = new System.Drawing.Size(447, 332);
             this.dgvDanhSachHoiVien.TabIndex = 1;
             this.dgvDanhSachHoiVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoiVien_CellContentClick);
+            // 
+            // btnImport
+            // 
+            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImport.Location = new System.Drawing.Point(682, 406);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(75, 23);
+            this.btnImport.TabIndex = 6;
+            this.btnImport.Text = "&Import";
+            this.btnImport.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(15, 420);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 7;
+            this.btnThem.Text = "&Lưu";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(118, 420);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.TabIndex = 8;
+            this.btnHuy.Text = "&Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(219, 420);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "&Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "STT";
+            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "MSSV";
+            this.dataGridViewTextBoxColumn2.HeaderText = "MSSV";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "HoTen";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Họ tên";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Hạng";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Hạng";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 70;
             // 
             // STT
             // 
@@ -338,46 +410,6 @@
             this.ELO.Name = "ELO";
             this.ELO.ReadOnly = true;
             this.ELO.Width = 70;
-            // 
-            // btnImport
-            // 
-            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnImport.Location = new System.Drawing.Point(682, 406);
-            this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(75, 23);
-            this.btnImport.TabIndex = 6;
-            this.btnImport.Text = "&Import";
-            this.btnImport.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnThem.Location = new System.Drawing.Point(15, 420);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 7;
-            this.btnThem.Text = "&Lưu";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHuy.Location = new System.Drawing.Point(118, 420);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
-            this.btnHuy.TabIndex = 8;
-            this.btnHuy.Text = "&Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnThoat.Location = new System.Drawing.Point(219, 420);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 9;
-            this.btnThoat.Text = "&Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // ThemGiaiDauGUI
             // 
@@ -443,5 +475,9 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

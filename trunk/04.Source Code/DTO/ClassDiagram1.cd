@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DTO.CapBacHoiVienDTO" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAAQAAkAAAAARAAAAEIAACBCAAAgAgAAAQIgA=</HashCode>
+      <FileName>CapBacHoiVienDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.CapToChucGiaiDauDTO" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAgAAAAAAAAAAAAAAAACAAAAIAAAAAIgA=</HashCode>
+      <FileName>CapToChucGiaiDauDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ChuyenDoiELOSangPDTO" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChuyenDoiELOSangPDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ChuyenDoiPSangDPDTO" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChuyenDoiPSangDPDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.DiemThuongDTO" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAEAAgABAAAAAAAAAAAAAAAAAAAACAAAAggA=</HashCode>
+      <FileName>DiemThuongDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.GiaiDauDTO" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAEIIAIAAAgAAAAAAAAAAgAAAAIAAQAgAgAAAAggA=</HashCode>
+      <FileName>GiaiDauDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.HoiVienDTO" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAhAIIACQACgAAQAAAAGAAIAAgAIAAAABAwAAAAKgA=</HashCode>
+      <FileName>HoiVienDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.KetQuaTranDauDTO" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAiAAAAAAAAAAAAAAACAAAAAAAAAAAAgA=</HashCode>
+      <FileName>KetQuaTranDauDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ThamGiaGiaiDauDTO" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAAABAAAAARAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ThamGiaGiaiDauDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.ThamSoDTO" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgIAAQACAAECAAAAAAAAAABAAAAAQAgA=</HashCode>
+      <FileName>ThamSoDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.TranDauDTO" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIKgAAAAoAAAAAAAAQAgAAGAIAAAggAgAAAAIgA=</HashCode>
+      <FileName>TranDauDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

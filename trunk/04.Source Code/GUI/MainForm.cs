@@ -58,5 +58,13 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void thêmGiảiĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThemGiaiDauGUI frmThemGiaDau = new ThemGiaiDauGUI();
+            frmThemGiaDau.MdiParent = this;
+            //frmThemGiaDau.WindowState = FormWindowState.Maximized;
+            frmThemGiaDau.Show();
+        }
     }
 }

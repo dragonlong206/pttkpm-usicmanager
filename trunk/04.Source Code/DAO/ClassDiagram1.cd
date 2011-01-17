@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAO.CapBacHoiVienDAO" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAoAABAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CapBacHoiVienDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.CapToChucGiaiDauDAO" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CapToChucGiaiDauDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.ChuyenDoiELOSangPDAO" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChuyenDoiELOSangPDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.ChuyenDoiPSangDpDAO" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChuyenDoiPSangDpDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.DiemThuongDAO" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DiemThuongDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.GiaiDauDAO" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAACAAAAAAAAAAAAACAACAAA=</HashCode>
+      <FileName>GiaiDauDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.HoiVienDAO" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAQAIAAAAAAAACAEAwSBAAAAAAQAQABAAIAAAA=</HashCode>
+      <FileName>HoiVienDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.KetQuaTranDauDAO" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KetQuaTranDauDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.SqlDataAccessHelper" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAgAAAAAAEAAAAAAAAgAACAgAAAAAEA=</HashCode>
+      <FileName>SqlDataAccessHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.ThamGiaGiaiDauDAO" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThamGiaGiaiDauDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.ThamSoDAO" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThamSoDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.TranDauDAO" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TranDauDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DAO.KET_QUA" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAA=</HashCode>
+      <FileName>ChuyenDoiELOSangPDAO.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

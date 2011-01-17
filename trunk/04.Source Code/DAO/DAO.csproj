@@ -50,6 +50,7 @@
     <Compile Include="ChuyenDoiELOSangPDAO.cs" />
     <Compile Include="ChuyenDoiPSangDpDAO.cs" />
     <Compile Include="DiemThuongDAO.cs" />
+    <Compile Include="GiaiDauDAO.cs" />
     <Compile Include="HoiVienDAO.cs" />
     <Compile Include="KetQuaTranDauDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +64,9 @@
       <Project>{8E19DB11-2B16-430F-9AAB-CB9D32265EF3}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
