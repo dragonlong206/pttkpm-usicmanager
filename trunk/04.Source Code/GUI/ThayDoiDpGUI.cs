@@ -15,5 +15,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void txtHangSo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
