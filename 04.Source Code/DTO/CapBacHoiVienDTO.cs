@@ -95,7 +95,7 @@ namespace DTO
             eloNhoNhat = 0;
             soGiaiDauToiThieu = 0;
             maCapGiaiDauNhoNhat = 0;
-            thuHangToiThieu = 0;
+            thuHangToiThieu = 10000;
             gioiTinh = 0;
             daXoa = false;
             loaiCapBac = 1;

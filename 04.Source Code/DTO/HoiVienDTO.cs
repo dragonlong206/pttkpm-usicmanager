@@ -11,10 +11,11 @@ namespace DTO
         string hoTen;
         string mssv;
         int gioiTinh;
-        float elo;
+        double elo;
         int maCapBac;
         string tenCapBac;
         int diemLienKich;
+        int diemLienKichCaoNhat;
         DateTime thoiGianDatDiemLienKich;
         bool daXoa;
 
@@ -48,7 +49,7 @@ namespace DTO
             set { gioiTinh = value; }
         }
 
-        public float ELO
+        public double ELO
         {
             get { return elo; }
             set { elo = value; }
@@ -67,6 +68,12 @@ namespace DTO
         {
             get { return diemLienKich; }
             set { diemLienKich = value; }
+        }
+
+        public int DiemLienKichCaoNhat
+        {
+            get { return diemLienKichCaoNhat; }
+            set { diemLienKichCaoNhat = value; }
         }
 
         public DateTime ThoiGianDatDiemLienKich
@@ -91,6 +98,7 @@ namespace DTO
             maCapBac = 1;
             tenCapBac = string.Empty;
             diemLienKich = -1;
+            diemLienKichCaoNhat = -1;
             thoiGianDatDiemLienKich = DateTime.Now;
             daXoa = false;
         }

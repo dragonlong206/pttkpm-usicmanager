@@ -32,12 +32,6 @@
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.grbDanhSachHoiVien = new System.Windows.Forms.GroupBox();
             this.dgvDanhSachHoiVien = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ELO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CapBac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiemLienKich = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbChiTietHoiVien = new System.Windows.Forms.GroupBox();
             this.pnlChiTietHoiVien = new System.Windows.Forms.Panel();
             this.ucHoiVien_ChiTiet1 = new GUI.ucHoiVien_ChiTiet();
@@ -53,6 +47,12 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.txtHuongDan = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ELO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CapBac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiemLienKichCaoNhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbDanhSachHoiVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoiVien)).BeginInit();
             this.grbChiTietHoiVien.SuspendLayout();
@@ -94,7 +94,7 @@
             this.MSSV,
             this.ELO,
             this.CapBac,
-            this.DiemLienKich});
+            this.DiemLienKichCaoNhat});
             this.dgvDanhSachHoiVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhSachHoiVien.Location = new System.Drawing.Point(3, 16);
             this.dgvDanhSachHoiVien.MultiSelect = false;
@@ -105,55 +105,6 @@
             this.dgvDanhSachHoiVien.Size = new System.Drawing.Size(516, 456);
             this.dgvDanhSachHoiVien.TabIndex = 0;
             this.dgvDanhSachHoiVien.SelectionChanged += new System.EventHandler(this.dgvDanhSachHoiVien_SelectionChanged);
-            this.dgvDanhSachHoiVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoiVien_CellContentClick);
-            // 
-            // STT
-            // 
-            this.STT.DataPropertyName = "STT";
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 50;
-            // 
-            // HoTen
-            // 
-            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Họ tên";
-            this.HoTen.Name = "HoTen";
-            this.HoTen.ReadOnly = true;
-            // 
-            // MSSV
-            // 
-            this.MSSV.DataPropertyName = "MSSV";
-            this.MSSV.HeaderText = "MSSV";
-            this.MSSV.Name = "MSSV";
-            this.MSSV.ReadOnly = true;
-            this.MSSV.Width = 70;
-            // 
-            // ELO
-            // 
-            this.ELO.DataPropertyName = "ELO";
-            this.ELO.HeaderText = "ELO";
-            this.ELO.Name = "ELO";
-            this.ELO.ReadOnly = true;
-            this.ELO.Width = 70;
-            // 
-            // CapBac
-            // 
-            this.CapBac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CapBac.DataPropertyName = "TenCapBac";
-            this.CapBac.HeaderText = "Cấp bậc";
-            this.CapBac.Name = "CapBac";
-            this.CapBac.ReadOnly = true;
-            // 
-            // DiemLienKich
-            // 
-            this.DiemLienKich.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiemLienKich.DataPropertyName = "DiemLienKich";
-            this.DiemLienKich.HeaderText = "Điểm liên kích";
-            this.DiemLienKich.Name = "DiemLienKich";
-            this.DiemLienKich.ReadOnly = true;
             // 
             // grbChiTietHoiVien
             // 
@@ -185,7 +136,6 @@
             this.ucHoiVien_ChiTiet1.Name = "ucHoiVien_ChiTiet1";
             this.ucHoiVien_ChiTiet1.Size = new System.Drawing.Size(233, 303);
             this.ucHoiVien_ChiTiet1.TabIndex = 0;
-            this.ucHoiVien_ChiTiet1.Load += new System.EventHandler(this.ucHoiVien_ChiTiet1_Load);
             // 
             // btnImport
             // 
@@ -302,6 +252,54 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // STT
+            // 
+            this.STT.DataPropertyName = "STT";
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            this.STT.Width = 50;
+            // 
+            // HoTen
+            // 
+            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ tên";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            // 
+            // MSSV
+            // 
+            this.MSSV.DataPropertyName = "MSSV";
+            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.Name = "MSSV";
+            this.MSSV.ReadOnly = true;
+            this.MSSV.Width = 70;
+            // 
+            // ELO
+            // 
+            this.ELO.DataPropertyName = "ELO";
+            this.ELO.HeaderText = "ELO";
+            this.ELO.Name = "ELO";
+            this.ELO.ReadOnly = true;
+            this.ELO.Width = 70;
+            // 
+            // CapBac
+            // 
+            this.CapBac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CapBac.DataPropertyName = "TenCapBac";
+            this.CapBac.HeaderText = "Cấp bậc";
+            this.CapBac.Name = "CapBac";
+            this.CapBac.ReadOnly = true;
+            // 
+            // DiemLienKichCaoNhat
+            // 
+            this.DiemLienKichCaoNhat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiemLienKichCaoNhat.DataPropertyName = "DiemLienKichCaoNhat";
+            this.DiemLienKichCaoNhat.HeaderText = "Điểm liên kích";
+            this.DiemLienKichCaoNhat.Name = "DiemLienKichCaoNhat";
+            this.DiemLienKichCaoNhat.ReadOnly = true;
+            // 
             // HoiVienGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,12 +342,6 @@
         private System.Windows.Forms.ToolTip ttToolTip;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ELO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CapBac;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiemLienKich;
         private System.Windows.Forms.GroupBox grbTimKiem;
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.TextBox txtHoTen;
@@ -358,5 +350,11 @@
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.TextBox txtHuongDan;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ELO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CapBac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiemLienKichCaoNhat;
     }
 }

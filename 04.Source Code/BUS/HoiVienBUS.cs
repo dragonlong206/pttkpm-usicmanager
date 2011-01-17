@@ -122,6 +122,23 @@ namespace BUS
             return null;
         }
 
+        public HoiVienDTO LayThongTinHoiVienTheoMa(int maHoiVien)
+        {
+            try
+            {
+                if (maHoiVien > 0)
+                {
+                    return hoiVienDAO.LayThongTinHoiVienTheoMa(maHoiVien);
+                }
+                
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public static HoiVienDTO LayDuLieuHoiVienTuBang(DataTable danhSachHoiVien, int i)
         {
             return HoiVienDAO.LayDuLieuHoiVienTuBang(danhSachHoiVien, i);

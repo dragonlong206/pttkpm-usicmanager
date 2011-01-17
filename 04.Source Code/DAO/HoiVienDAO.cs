@@ -10,6 +10,7 @@ namespace DAO
 {
     public class HoiVienDAO
     {
+        #region Insert
         public bool ThemMoiHoiVien(HoiVienDTO hoiVien)
         {
             try
@@ -59,7 +60,9 @@ namespace DAO
 
             return true;
         }
+        #endregion
 
+        #region Update
         public bool CapNhatHoiVien(HoiVienDTO hoiVienDTO)
         {
             try
@@ -151,6 +154,138 @@ namespace DAO
             return false;
         }
 
+        public bool CapNhatELO(int maHoiVien, double ELO)
+        {
+            try
+            {
+                string sql = "UPDATE HOI_VIEN SET ELO = ELO + ? WHERE ID = ?";
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+                
+                OleDbParameter prELO = new OleDbParameter("@ELO", OleDbType.Double);
+                prELO.Value = ELO;
+                sqlParams.Add(prELO);
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@MaHoiVien", OleDbType.Integer);
+                prMaHoiVien.Value = maHoiVien;
+                sqlParams.Add(prMaHoiVien);
+
+                int soDongCapNhat = SqlDataAccessHelper.ExecuteNoneQuery(sql, sqlParams);
+                if (soDongCapNhat == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool TangDiemLienKich(HoiVienDTO hoiVienDTO, DateTime thoiGianDat)
+        {
+            try
+            {
+                string sql = string.Empty;
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+
+                if (hoiVienDTO.DiemLienKich + 1 <= hoiVienDTO.DiemLienKichCaoNhat)
+                {
+                    sql = @"UPDATE HOI_VIEN SET DiemLienKich = DiemLienKich + 1  
+                                WHERE ID = ?";
+                }
+                else 
+                {
+                    sql = @"UPDATE HOI_VIEN SET DiemLienKich = DiemLienKich + 1, 
+                                DiemLienKichCaoNhat = DiemLienKich, 
+                                ThoiGianDatDiemLienKich = ? 
+                                WHERE ID = ?";
+
+
+                    OleDbParameter prThoiGianDat = new OleDbParameter("@ThoiGianDat", OleDbType.Date);
+                    prThoiGianDat.Value = thoiGianDat;
+                    sqlParams.Add(prThoiGianDat);
+                }                
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@ID", OleDbType.Integer);
+                prMaHoiVien.Value = hoiVienDTO.ID;
+                sqlParams.Add(prMaHoiVien);
+
+                int soDongCapNhat = SqlDataAccessHelper.ExecuteNoneQuery(sql, sqlParams);
+                if (soDongCapNhat == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool ResetDiemLienKich(int maHoiVien)
+        {
+            try
+            {
+                string sql = "UPDATE HOI_VIEN SET DiemLienKich = 0 WHERE ID = ?";
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@ID", OleDbType.Integer);
+                prMaHoiVien.Value = maHoiVien;
+                sqlParams.Add(prMaHoiVien);
+
+                int soDongCapNhat = SqlDataAccessHelper.ExecuteNoneQuery(sql, sqlParams);
+                if (soDongCapNhat == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool CapNhatCapBac(int maHoiVien, int maCapBacMoi)
+        {
+            try
+            {
+                string sql = "UPDATE HOI_VIEN SET maCapBac = ? WHERE ID = ?";
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+
+                OleDbParameter prCapBacMoi = new OleDbParameter("@MaCapBac", OleDbType.Integer);
+                prCapBacMoi.Value = maCapBacMoi;
+                sqlParams.Add(prCapBacMoi);
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@ID", OleDbType.Integer);
+                prMaHoiVien.Value = maHoiVien;
+                sqlParams.Add(prMaHoiVien);
+
+                int soDongCapNhat = SqlDataAccessHelper.ExecuteNoneQuery(sql, sqlParams);
+                if (soDongCapNhat == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Delete
         public bool XoaHoiVien(int ID)
         {
             try
@@ -172,6 +307,7 @@ namespace DAO
 
             return false;
         }
+        #endregion
 
         #region Select
         public DataTable LayDanhSachTatCaHoiVien()
@@ -180,16 +316,16 @@ namespace DAO
 
             try
             {
-                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, DiemLienKichCaoNhat, ThoiGianDatDiemLienKich 
                                 FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
-                                WHERE HV.DaXoa = 0";
+                                WHERE HV.DaXoa = 0 ORDER BY MaCapBac DESC, ELO DESC, DiemLienKich DESC";
                 DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql);
-                //if (danhSachHoiVien.Rows.Count > 0)
+                //if (danhSachCapBac.Rows.Count > 0)
                 //{
-                //    for (int i = 0; i < danhSachHoiVien.Rows.Count; i++)
+                //    for (int chiSoDong = 0; chiSoDong < danhSachCapBac.Rows.Count; chiSoDong++)
                 //    {
-                //        HoiVienDTO hoiVienDTO = LayDuLieuHoiVienTuBang(danhSachHoiVien, i);
-                //        ketQua.Add(hoiVienDTO);
+                //        HoiVienDTO capToChucGiaiDauDTO = LayDuLieuHoiVienTuBang(danhSachCapBac, chiSoDong);
+                //        ketQua.Add(capToChucGiaiDauDTO);
                 //    }
                 //}
                 return SqlDataAccessHelper.AutoNumberedTable(danhSachHoiVien);
@@ -221,7 +357,7 @@ namespace DAO
         {
             try
             {
-                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+                string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, DiemLienKichCaoNhat, ThoiGianDatDiemLienKich 
                                 FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
                                 WHERE HV.DaXoa = 0 AND HoTen LIKE '%" + hoTen + "%'";
 
@@ -237,7 +373,7 @@ namespace DAO
 
         public DataTable LayHoiVienTheoMSSV(string MSSV)
         {
-            string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, ThoiGianDatDiemLienKich 
+            string sql = @"SELECT HV.ID, HoTen, MSSV, HV.GioiTinh, ELO, MaCapBac, TenCapBac, DiemLienKich, DiemLienKichCaoNhat, ThoiGianDatDiemLienKich 
                                 FROM HOI_VIEN AS HV INNER JOIN CAP_BAC_HOI_VIEN AS CB ON HV.MaCapBac = CB.ID 
                                 WHERE HV.DaXoa = 0 AND MSSV = ?";
 
@@ -249,6 +385,56 @@ namespace DAO
             DataTable danhSachHoiVien = SqlDataAccessHelper.ExecuteQuery(sql, sqlParams);
 
             return SqlDataAccessHelper.AutoNumberedTable(danhSachHoiVien);
+        }
+
+        public HoiVienDTO LayThongTinHoiVienTheoMa(int maHoiVien)
+        {
+            try
+            {
+                string sql = "SELECT * FROM HOI_VIEN WHERE ID = ?";
+
+                OleDbParameter prMaHoiVien = new OleDbParameter("@ID", OleDbType.Integer);
+                prMaHoiVien.Value = maHoiVien;
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+                sqlParams.Add(prMaHoiVien);
+
+                DataTable hoiVien = SqlDataAccessHelper.ExecuteQuery(sql, sqlParams);
+
+                if (hoiVien.Rows.Count > 0)
+                {
+                    HoiVienDTO ketQua = LayDuLieuHoiVienTuBang(hoiVien, 0);
+                    return ketQua;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable LayDuLieuHoiVienTheoCapBac(int maCapBac)
+        {
+            try
+            {
+                string sql = "SELECT * FROM HOI_VIEN WHERE MaCapBac = ?";
+
+                List<OleDbParameter> sqlParams = new List<OleDbParameter>();
+
+                OleDbParameter prMaCapBac = new OleDbParameter("@MaCapBac", OleDbType.Integer);
+                prMaCapBac.Value = maCapBac;
+                sqlParams.Add(prMaCapBac);
+
+                DataTable ketQua = SqlDataAccessHelper.ExecuteQuery(sql, sqlParams);
+
+                return ketQua;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public static HoiVienDTO LayDuLieuHoiVienTuBang(DataTable danhSachHoiVien, int i)
@@ -291,6 +477,12 @@ namespace DAO
             if (success)
             {
                 hoiVienDTO.DiemLienKich = temp1;
+            }
+
+            success = int.TryParse(danhSachHoiVien.Rows[i]["DiemLienKichCaoNhat"].ToString(), out temp1);
+            if (success)
+            {
+                hoiVienDTO.DiemLienKichCaoNhat = temp1;
             }
 
             DateTime temp3;

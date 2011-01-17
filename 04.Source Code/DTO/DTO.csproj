@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="CapBacHoiVienDTO.cs" />
     <Compile Include="CapToChucGiaiDauDTO.cs" />
+    <Compile Include="ChuyenDoiELOSangPDTO.cs" />
+    <Compile Include="ChuyenDoiPSangDPDTO.cs" />
     <Compile Include="DiemThuongDTO.cs" />
     <Compile Include="GiaiDauDTO.cs" />
     <Compile Include="HoiVienDTO.cs" />
